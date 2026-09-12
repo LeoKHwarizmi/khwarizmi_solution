@@ -42,7 +42,7 @@ final page2 = buildPage2();
 document.body!..append(page1)..append(Element.tag('br'))..append(page2);
 
   // Change URL from /html.html to /
-  window.history.replaceState(null, '', '/');
+  window.history.replaceState(null, '', '/khwarizmi_solution/');
 
   // --------------------------------------------------
   // Navigation SVG
@@ -205,7 +205,7 @@ void fromHtmlRToTuts() {
       window.sessionStorage['open-tuts'] = 'true';
 
       // Return to the main address
-      window.location.href = '/';
+      window.location.href = '/khwarizmi_solution/';
     }
   }
 
@@ -217,7 +217,7 @@ void fromTutsGoToHtml() {
   final page1 = document.querySelector('.section')?.querySelector('svg');
 
   if (page1 == null) {
-    window.location.href = "/html.html";
+    window.location.href = "/khwarizmi_solution/html.html";
     return;
   }
 
@@ -245,7 +245,7 @@ void fromTutsGoToHtml() {
     if (progress < 1) {
       window.requestAnimationFrame(animate);
     } else {
-      window.location.href = "/html.html";
+      window.location.href = "/khwarizmi_solution/html.html";
     }
   }
 

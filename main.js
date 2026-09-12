@@ -4121,7 +4121,7 @@
         t2.appendChild(page2).toString;
         t2 = window.history;
         t2.toString;
-        t2.replaceState(new A._StructuredCloneDart2Js([], []).walk$1(null), "", "/");
+        t2.replaceState(new A._StructuredCloneDart2Js([], []).walk$1(null), "", "/khwarizmi_solution/");
         navSvg = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "svg");
         navSvg.setAttribute("width", _s4_);
         navSvg.setAttribute("height", _s4_);
@@ -4222,7 +4222,7 @@
         t1 = document.querySelector(".section"),
         page1 = t1 == null ? null : t1.querySelector("svg");
       if (page1 == null) {
-        type$.Location._as(window.location).href = "/html.html";
+        type$.Location._as(window.location).href = "/khwarizmi_solution/html.html";
         return;
       }
       start = Date.now();
@@ -8798,7 +8798,7 @@
         B.Window_methods.requestAnimationFrame$1(t1, this);
       } else {
         window.sessionStorage.setItem("open-tuts", "true");
-        type$.Location._as(window.location).href = "/";
+        type$.Location._as(window.location).href = "/khwarizmi_solution/";
       }
     },
     $signature: 2
@@ -8816,7 +8816,7 @@
         t1.toString;
         B.Window_methods.requestAnimationFrame$1(t1, this);
       } else
-        type$.Location._as(window.location).href = "/html.html";
+        type$.Location._as(window.location).href = "/khwarizmi_solution/html.html";
     },
     $signature: 2
   };
