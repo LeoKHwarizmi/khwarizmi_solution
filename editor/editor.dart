@@ -778,9 +778,15 @@ $javascript
           HttpRequest();
 
 
+      final compilerUrl =
+          window.location.hostname == '127.0.0.1' ||
+          window.location.hostname == 'localhost'
+              ? 'http://127.0.0.1:9000/compile'
+              : 'https://khwarizmi-solution.onrender.com/compile';
+
       request.open(
         'POST',
-        'http://127.0.0.1:9000/compile',
+        compilerUrl,
       );
 
 

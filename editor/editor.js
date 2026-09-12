@@ -6836,7 +6836,8 @@
       var t1 = String(receiver);
       t1.toString;
       return t1;
-    }
+    },
+    $isLocation: 1
   };
   A.MediaList.prototype = {
     get$length(receiver) {
@@ -8111,7 +8112,7 @@
     runCode$0() {
       var $async$goto = 0,
         $async$completer = A._makeAsyncAwaitCompleter(type$.void),
-        $async$returnValue, $async$handler = 2, $async$errorStack = [], $async$self = this, request, responseText, data, compilerError, javascript, error, t1, mainCode, t2, responseText0, html, css, exception, $async$exception;
+        $async$returnValue, $async$handler = 2, $async$errorStack = [], $async$self = this, request, compilerUrl, responseText, data, compilerError, javascript, error, t1, mainCode, t2, responseText0, html, css, exception, $async$exception;
       var $async$runCode$0 = A._wrapJsFunctionForAsync(function($async$errorCode, $async$result) {
         if ($async$errorCode === 1) {
           $async$errorStack.push($async$result);
@@ -8139,7 +8140,9 @@
               t2 = new XMLHttpRequest();
               t2.toString;
               request = t2;
-              J.open$2$x(request, "POST", "http://127.0.0.1:9000/compile");
+              t2 = type$.Location;
+              compilerUrl = t2._as(window.location).hostname === "127.0.0.1" || t2._as(window.location).hostname === "localhost" ? "http://127.0.0.1:9000/compile" : "https://khwarizmi-solution.onrender.com/compile";
+              J.open$2$x(request, "POST", compilerUrl);
               J.setRequestHeader$2$x(request, "Content-Type", "application/json");
               J.send$1$x(request, B.C_JsonCodec.encode$2$toEncodable(A.LinkedHashMap_LinkedHashMap$_literal(["files", t1], type$.String, type$.Map_String_String), null));
               $async$goto = 7;
@@ -8624,6 +8627,7 @@
       KeyboardEvent: findType("KeyboardEvent"),
       Length: findType("Length"),
       List_dynamic: findType("List<@>"),
+      Location: findType("Location"),
       Map_String_String: findType("Map<String,String>"),
       Map_dynamic_dynamic: findType("Map<@,@>"),
       MessageEvent: findType("MessageEvent"),
