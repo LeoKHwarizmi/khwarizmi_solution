@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    background: #0b0b0f;
+
+    color: white;
+}
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+svg {
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    user-select: none;
+}
+
+
+/* =========================================================
+   PAGES
+   ========================================================= */
+
+.page {
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.big-logo-image {
+
+    pointer-events: none;
+
+    filter:
+        drop-shadow(
+            0 20px 40px
+            rgba(0, 0, 0, 0.45)
+        );
+}
+
+
+/* =========================================================
+   PAGE TEXT
+   ========================================================= */
+
+.page-title {
+
+    fill: white;
+
+    font-size: 52px;
+
+    font-weight: 700;
+
+}
+
+.page-title1 {
+
+    fill: white;
+
+    font-size: 52px;
+
+    font-weight: 700;
+
+    letter-spacing: 7px;
+}
+
+.page-subtitle {
+
+    fill: #dddddd;
+
+    font-size: 24px;
+
+    font-weight: 400;
+}
+
+.page-text {
+
+    fill: #999999;
+
+    font-size: 17px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   PROJECT CARD
+   ========================================================= */
+
+.card {
+
+    fill: #171b22;
+
+    stroke: #303640;
+
+    stroke-width: 1;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTON
+   ========================================================= */
+
+.nav-button {
+
+    pointer-events: all;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   NAVIGATION CIRCLE
+   ========================================================= */
+
+.nav-circle {
+
+    fill: rgba(20, 20, 25, 0.94);
+
+    stroke: rgba(255, 255, 255, 0.18);
+
+    stroke-width: 1.5;
+}
+
+.nav-button:hover .nav-circle {
+
+    fill: rgba(255, 255, 255, 0.11);
+
+    stroke: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.nav-arrow {
+
+    fill: white;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   PAGE NAME
+   ========================================================= */
+
+.nav-label {
+
+    fill: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TYPE
+   ========================================================= */
+
+.nav-type {
+
+    fill: #666666;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SUBSECTIONS
+   ========================================================= */
+
+.nav-subsection {
+
+    fill: #66666f;
+
+    font-size: 10px;
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+    pointer-events: none;
+
+    opacity: 0.85;
+}
+
+.nav-subsection-line {
+
+    stroke: #303038;
+
+    stroke-width: 1;
+
+    opacity: 0.7;
+
+    pointer-events: none;
+}
+
+.protected-image {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+
+@media print {
+  .protected-image {
+    display: none !important;
+  }
+}

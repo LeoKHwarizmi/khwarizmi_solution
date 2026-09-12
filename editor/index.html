@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+
+>
+
+<title>Sybil Studio - Dart Web IDE</title>
+
+<link
+    rel="stylesheet"
+    href="editorstyles.css"
+>
+
+<link
+    rel="icon"
+    type="image/png"
+    href="Sybil Studio.png"
+>
+
+</head>
+
+<body>
+
+<div id="app">
+
+<!-- ======================================================
+     HEADER
+======================================================= -->
+
+<header id="header">
+
+<div id="title">
+
+
+Sybil Studio - Dart Web IDE
+
+<sub
+    style="
+        font-size: 0.65em;
+        font-weight: normal;
+        color: LightBlue;
+        opacity: 0.7;
+        margin-left: 8px;
+        vertical-align: sub;
+    "
+>
+    an Omrani Research Industries Product
+</sub>
+
+
+</div>
+
+<div id="toolbar">
+
+
+<button id="run">
+    Run
+</button>
+
+<button id="save">
+    Save
+</button>
+
+<button id="clear">
+    Clear
+</button>
+
+<button id="new-file">
+    + New File
+</button>
+
+
+</div>
+
+</header>
+
+<!-- ======================================================
+     FILE TABS
+======================================================= -->
+
+<div id="tabs"></div>
+
+<!-- ======================================================
+     MAIN
+======================================================= -->
+
+<main id="main">
+
+<!-- ==================================================
+     EDITOR
+=================================================== -->
+
+<section id="editor-panel">
+
+
+<div class="panel-title">
+
+    <span id="current-file">
+        main.dart
+    </span>
+
+</div>
+
+
+<div id="editor-area">
+
+    <div id="line-numbers"></div>
+
+
+    <textarea
+        id="editor"
+        spellcheck="false"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+    ></textarea>
+
+</div>
+
+
+</section>
+
+<!-- ==================================================
+     PREVIEW
+=================================================== -->
+
+<section id="preview-panel">
+
+
+<div class="panel-title">
+    Preview
+</div>
+
+
+<iframe
+    id="preview"
+    title="Dart Web Preview"
+    sandbox="allow-scripts allow-modals"
+></iframe>
+
+
+</section>
+
+</main>
+
+<!-- ======================================================
+     OUTPUT
+======================================================= -->
+
+<section id="output-panel">
+
+<div id="output-title">
+    OUTPUT
+</div>
+
+<pre id="output"></pre>
+
+</section>
+
+<!-- ======================================================
+     FOOTER
+======================================================= -->
+
+<footer
+    id="site-footer"
+    style="
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 35px;
+        background: #111827;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        flex-shrink: 0;
+        font-family: Arial, sans-serif;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    "
+>
+
+<!-- ==================================================
+     FOOTER BRAND
+=================================================== -->
+
+<div
+    id="footer-brand"
+    style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-shrink: 0;
+    "
+>
+
+
+<img
+    id="footer-logo"
+    src="../footerlogo.png"
+    alt="Omrani Research Industries"
+    style="
+        display: block;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        max-width: 40px;
+        max-height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 12px 0 0;
+    "
+>
+
+<span
+    id="footer-name"
+    style="
+        display: block;
+        color: white;
+        font-size: 14px;
+        opacity: 0.65;
+        white-space: nowrap;
+    "
+>
+    Omrani Research Industries
+</span>
+
+
+</div>
+
+<!-- ==================================================
+     CENTER TAGLINE
+=================================================== -->
+
+<div
+    id="footer-tagline"
+    style="
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: LightBlue;
+        font-size: 13px;
+        font-weight: normal;
+        opacity: 0.65;
+        white-space: nowrap;
+        text-align: center;
+        pointer-events: none;
+    "
+>
+    Sybil Studio - Bullseye Engine at Heart
+</div>
+
+<!-- ==================================================
+     FOOTER LINKS
+=================================================== -->
+
+<div
+    id="footer-links"
+    style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 45px;
+        margin-left: auto;
+        margin-right: 45px;
+        flex-shrink: 0;
+    "
+>
+
+
+<a
+    href="privacy.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+        display: inline-block;
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+        opacity: 0.60;
+        white-space: nowrap;
+    "
+>
+    Privacy Policy
+</a>
+
+
+<a
+    href="terms.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+        display: inline-block;
+        color: white;
+        font-size: 13px;
+        text-decoration: none;
+        opacity: 0.60;
+        white-space: nowrap;
+    "
+>
+    Terms
+</a>
+
+
+</div>
+
+<!-- ==================================================
+     COPYRIGHT
+=================================================== -->
+
+<div
+    id="footer-copyright"
+    style="
+        display: block;
+        color: white;
+        font-size: 13px;
+        opacity: 0.40;
+        white-space: nowrap;
+        flex-shrink: 0;
+    "
+>
+    ORI © 2026
+</div>
+
+</footer>
+
+</div>
+
+<script
+    src="editor.js"
+    defer
+></script>
+
+</body>
+
+</html>

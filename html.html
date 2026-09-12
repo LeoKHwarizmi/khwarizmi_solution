@@ -1,0 +1,23 @@
+
+<!-- Highlight.js -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+<!-- Prettier -->
+<script src="https://unpkg.com/prettier@3.3.3/standalone.js"></script>
+<script src="https://unpkg.com/prettier@3.3.3/plugins/html.js"></script>
+<script src="https://unpkg.com/prettier@3.3.3/plugins/babel.js"></script>
+<script src="https://unpkg.com/prettier@3.3.3/plugins/postcss.js"></script>
+
+<script>
+async function formatCode(code, language) {
+    return await prettier.format(code, {
+        parser: language,
+        plugins: prettierPlugins
+    });
+}
+</script>
+
+<script defer src="main.js"></script>

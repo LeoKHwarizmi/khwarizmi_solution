@@ -1,0 +1,512 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    font-family:
+        Arial,
+        sans-serif;
+}
+
+
+body {
+    background: #111;
+
+    color: #eee;
+}
+
+
+/* ============================================================
+   APPLICATION
+============================================================ */
+
+#app {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+#header {
+    height: 56px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 18px;
+
+    background: #181818;
+
+    border-bottom: 1px solid #333;
+}
+
+
+#title {
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+
+#toolbar {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+button {
+    border: 1px solid #444;
+
+    background: #242424;
+
+    color: #eee;
+
+    padding: 7px 14px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 13px;
+}
+
+
+button:hover {
+    background: #333;
+}
+
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+/* ============================================================
+   RUN BUTTON
+============================================================ */
+
+#run {
+    background: #1d6f42;
+
+    border-color: #2a8a55;
+}
+
+
+#run:hover {
+    background: #258b52;
+}
+
+
+/* ============================================================
+   NEW FILE BUTTON
+============================================================ */
+
+#new-file {
+    background: #29445e;
+
+    border-color: #3d6285;
+}
+
+
+#new-file:hover {
+    background: #345675;
+}
+
+
+/* ============================================================
+   FILE TABS
+============================================================ */
+
+#tabs {
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: stretch;
+
+    background: #202020;
+
+    border-bottom: 1px solid #333;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+}
+
+
+#tabs::-webkit-scrollbar {
+    height: 5px;
+}
+
+
+#tabs::-webkit-scrollbar-thumb {
+    background: #444;
+}
+
+
+.tab {
+    height: 38px;
+
+    min-width: 100px;
+
+    border: none;
+
+    border-right: 1px solid #333;
+
+    border-radius: 0;
+
+    padding: 0 18px;
+
+    background: #202020;
+
+    color: #999;
+
+    white-space: nowrap;
+
+    flex-shrink: 0;
+}
+
+
+.tab:hover {
+    background: #292929;
+
+    color: #ddd;
+}
+
+
+.tab.active {
+    background: #111;
+
+    color: white;
+
+    border-top: 2px solid #4da3ff;
+}
+
+
+/* ============================================================
+   MAIN
+============================================================ */
+
+#main {
+    flex: 1;
+
+    min-height: 0;
+
+    display: flex;
+}
+
+
+/* ============================================================
+   EDITOR PANEL
+============================================================ */
+
+#editor-panel {
+    width: 55%;
+
+    min-width: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border-right: 1px solid #333;
+}
+
+
+.panel-title {
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 12px;
+
+    background: #1c1c1c;
+
+    border-bottom: 1px solid #333;
+
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+
+/* ============================================================
+   EDITOR AREA
+============================================================ */
+
+#editor-area {
+    flex: 1;
+
+    min-height: 0;
+
+    display: flex;
+
+    background: #111;
+
+    overflow: hidden;
+}
+
+
+/* ============================================================
+   LINE NUMBERS
+============================================================ */
+
+#line-numbers {
+    width: 52px;
+
+    flex-shrink: 0;
+
+    padding: 12px 8px;
+
+    overflow: hidden;
+
+    text-align: right;
+
+    user-select: none;
+
+    color: #666;
+
+    background: #151515;
+
+    border-right: 1px solid #292929;
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-size: 14px;
+
+    line-height: 21px;
+
+    white-space: pre;
+}
+
+
+/* ============================================================
+   TEXT EDITOR
+============================================================ */
+
+#editor {
+    flex: 1;
+
+    width: 100%;
+    height: 100%;
+
+    resize: none;
+
+    border: none;
+
+    outline: none;
+
+    padding: 12px;
+
+    background: #111;
+
+    color: #eee;
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-size: 14px;
+
+    line-height: 21px;
+
+    tab-size: 4;
+
+    white-space: pre;
+
+    overflow: auto;
+}
+
+
+#editor::selection {
+    background: #264f78;
+}
+
+
+/* ============================================================
+   PREVIEW
+============================================================ */
+
+#preview-panel {
+    flex: 1;
+
+    min-width: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+#preview {
+    flex: 1;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+
+    background: white;
+}
+
+
+/* ============================================================
+   OUTPUT
+============================================================ */
+
+#output-panel {
+    height: 150px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #0d0d0d;
+
+    border-top: 1px solid #333;
+}
+
+
+#output-title {
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 12px;
+
+    background: #181818;
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+#output {
+    flex: 1;
+
+    margin: 0;
+
+    padding: 10px 12px;
+
+    overflow: auto;
+
+    color: #ddd;
+
+    font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+
+    font-size: 13px;
+
+    white-space: pre-wrap;
+}
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 800px) {
+
+    #main {
+        flex-direction: column;
+    }
+
+
+    #editor-panel {
+        width: 100%;
+
+        height: 55%;
+
+        border-right: none;
+
+        border-bottom: 1px solid #333;
+    }
+
+
+    #preview-panel {
+        width: 100%;
+
+        height: 45%;
+    }
+
+
+    #output-panel {
+        height: 120px;
+    }
+
+
+    #title {
+        font-size: 15px;
+    }
+
+
+    #toolbar {
+        gap: 4px;
+    }
+
+
+    #toolbar button {
+        padding: 6px 9px;
+    }
+
+
+    .tab {
+        min-width: 90px;
+
+        padding: 0 12px;
+    }
+
+}
