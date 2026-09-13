@@ -4243,13 +4243,13 @@
       return page;
     },
     createHome() {
-      var logo, logo1, logo2, t2, t3, t4, t5, button, circle, text, gotoabout, button1, circle1, text1, gotosupport, button2, circle2, text2, gototutorials, editorButton, editorCircle, editorText, gotoeditor, footer, footerClipPath, footerCircle, footerLogo, footerName, privacy, terms, copyright,
+      var logo, logo1, logo2, t2, t3, t4, t5, button, circle, text, gotoabout, button1, circle1, text1, gotosupport, button2, circle2, text2, gototutorials, editorButton, editorCircle, editorText, gotoeditor, footer, footerClipPath, footerCircle, footerLogo, footerName, privacy, terms, copyright, joinGroup, joinText1, societyButton, societyText, joinText2,
         _s26_ = "http://www.w3.org/2000/svg",
         _s4_ = "text", _s1_ = "x", _s1_0 = "y", _s5_ = "class",
         _s11_ = "text-anchor",
         _s6_ = "middle", _s4_0 = "fill",
         _s9_ = "font-size",
-        _s2_ = "id",
+        _s1_1 = "g", _s2_ = "id",
         _s10_ = "nav-button",
         _s6_0 = "circle", _s2_0 = "cx", _s2_1 = "cy", _s2_2 = "28",
         _s7_ = "#ffffff",
@@ -4261,6 +4261,7 @@
         _s4_3 = "none", _s2_4 = "15", _s4_4 = "Gray",
         _s7_0 = "pointer",
         _s7_1 = "opacity",
+        _s6_2 = "cursor",
         $home = A.createPage("home", 0, 0),
         t1 = document;
       t1.toString;
@@ -4294,7 +4295,7 @@
       t3 = t3.get$onDragStart(t2);
       t4 = t3.$ti;
       A._EventStreamSubscription$(t3._target, t3._eventType, t4._eval$1("~(1)?")._as(new A.createHome_closure1()), false, t4._precomputed1);
-      button = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
+      button = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s1_1);
       button.setAttribute(_s2_, "button-up");
       button.setAttribute(_s5_, _s10_);
       circle = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s6_0);
@@ -4324,7 +4325,7 @@
       t4 = J.get$onClick$x(button);
       t3 = t4.$ti;
       A._EventStreamSubscription$(t4._target, t4._eventType, t3._eval$1("~(1)?")._as(new A.createHome_closure2()), false, t3._precomputed1);
-      button1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
+      button1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s1_1);
       button1.setAttribute(_s2_, "button-down");
       button1.setAttribute(_s5_, _s10_);
       circle1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s6_0);
@@ -4354,7 +4355,7 @@
       t3 = J.get$onClick$x(button1);
       t4 = t3.$ti;
       A._EventStreamSubscription$(t3._target, t3._eventType, t4._eval$1("~(1)?")._as(new A.createHome_closure3()), false, t4._precomputed1);
-      button2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
+      button2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s1_1);
       button2.setAttribute(_s2_, "button-right");
       button2.setAttribute(_s5_, _s10_);
       circle2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s6_0);
@@ -4384,7 +4385,7 @@
       t4 = J.get$onClick$x(button2);
       t3 = t4.$ti;
       A._EventStreamSubscription$(t4._target, t4._eventType, t3._eval$1("~(1)?")._as(new A.createHome_closure4()), false, t3._precomputed1);
-      editorButton = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
+      editorButton = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s1_1);
       editorButton.setAttribute(_s2_, "editor-button");
       editorButton.setAttribute(_s5_, _s10_);
       t3 = editorButton.style;
@@ -4419,7 +4420,7 @@
       t3 = J.get$onClick$x(editorButton);
       t4 = t3.$ti;
       A._EventStreamSubscription$(t3._target, t3._eventType, t4._eval$1("~(1)?")._as(new A.createHome_closure5()), false, t4._precomputed1);
-      footer = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
+      footer = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s1_1);
       footer.setAttribute(_s2_, "home-footer");
       footerClipPath = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "clipPath");
       footerClipPath.setAttribute(_s2_, "footerLogoClip");
@@ -4452,7 +4453,7 @@
       privacy.setAttribute(_s9_, "13");
       privacy.setAttribute(_s4_0, _s5_0);
       privacy.setAttribute(_s7_1, "0.60");
-      privacy.setAttribute("cursor", _s7_0);
+      privacy.setAttribute(_s6_2, _s7_0);
       privacy.setAttribute(_s14_0, "all");
       t2 = t2.get$onClick(privacy);
       t4 = t2.$ti;
@@ -4465,7 +4466,7 @@
       terms.setAttribute(_s9_, "13");
       terms.setAttribute(_s4_0, _s5_0);
       terms.setAttribute(_s7_1, "0.60");
-      terms.setAttribute("cursor", _s7_0);
+      terms.setAttribute(_s6_2, _s7_0);
       terms.setAttribute(_s14_0, "all");
       t4 = t4.get$onClick(terms);
       t2 = t4.$ti;
@@ -4482,6 +4483,57 @@
       footer.appendChild(privacy).toString;
       footer.appendChild(terms).toString;
       footer.appendChild(copyright).toString;
+      joinGroup = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s1_1);
+      joinGroup.setAttribute(_s2_, "join-society");
+      joinGroup.setAttribute(_s5_, _s10_);
+      joinText1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
+      J.set$text$x(joinText1, "Join");
+      joinText1.setAttribute(_s1_, "900");
+      joinText1.setAttribute(_s1_0, "45");
+      joinText1.setAttribute(_s9_, _s2_4);
+      joinText1.setAttribute(_s4_0, _s5_0);
+      joinText1.setAttribute(_s7_1, "0.75");
+      joinText1.setAttribute(_s11_, "end");
+      joinText1.setAttribute(_s14_0, _s4_3);
+      societyButton = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "rect");
+      societyButton.setAttribute(_s1_, "910");
+      societyButton.setAttribute(_s1_0, "0");
+      societyButton.setAttribute("width", "80");
+      societyButton.setAttribute("height", "57");
+      societyButton.setAttribute(_s4_0, "Maroon");
+      societyButton.setAttribute(_s12_, "0.5");
+      societyButton.setAttribute(_s6_2, _s7_0);
+      societyText = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
+      J.set$text$x(societyText, "Society");
+      societyText.setAttribute(_s1_, "950");
+      societyText.setAttribute(_s1_0, "45");
+      societyText.setAttribute(_s9_, "17");
+      societyText.setAttribute(_s4_0, _s5_0);
+      societyText.setAttribute(_s11_, _s6_);
+      societyText.setAttribute(_s14_0, _s4_3);
+      joinText2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
+      J.set$text$x(joinText2, "and become a Dartist");
+      joinText2.setAttribute(_s1_, "1000");
+      joinText2.setAttribute(_s1_0, "45");
+      joinText2.setAttribute(_s9_, _s2_4);
+      joinText2.setAttribute(_s4_0, _s5_0);
+      joinText2.setAttribute(_s7_1, "0.75");
+      joinText2.setAttribute(_s11_, "start");
+      joinText2.setAttribute(_s14_0, _s4_3);
+      t1 = J.getInterceptor$x(societyButton);
+      t2 = t1.get$onMouseEnter(societyButton);
+      t4 = t2.$ti;
+      A._EventStreamSubscription$(t2._target, t2._eventType, t4._eval$1("~(1)?")._as(new A.createHome_closure8(societyButton, societyText)), false, t4._precomputed1);
+      t4 = t1.get$onMouseLeave(societyButton);
+      t2 = t4.$ti;
+      A._EventStreamSubscription$(t4._target, t4._eventType, t2._eval$1("~(1)?")._as(new A.createHome_closure9(societyButton, societyText)), false, t2._precomputed1);
+      t1 = t1.get$onClick(societyButton);
+      t2 = t1.$ti;
+      A._EventStreamSubscription$(t1._target, t1._eventType, t2._eval$1("~(1)?")._as(new A.createHome_closure10()), false, t2._precomputed1);
+      joinGroup.appendChild(joinText1).toString;
+      joinGroup.appendChild(societyButton).toString;
+      joinGroup.appendChild(societyText).toString;
+      joinGroup.appendChild(joinText2).toString;
       button.appendChild(circle).toString;
       button.appendChild(text).toString;
       button.appendChild(gotoabout).toString;
@@ -4499,6 +4551,7 @@
       $home.appendChild(button2).toString;
       $home.appendChild(editorButton).toString;
       $home.appendChild(footer).toString;
+      $home.appendChild(joinGroup).toString;
     },
     createTuts() {
       var button1, rect1, text1, t2, t3, button, circle, text, gotohome,
@@ -5033,6 +5086,16 @@
     createHome_closure6: function createHome_closure6() {
     },
     createHome_closure7: function createHome_closure7() {
+    },
+    createHome_closure8: function createHome_closure8(t0, t1) {
+      this.societyButton = t0;
+      this.societyText = t1;
+    },
+    createHome_closure9: function createHome_closure9(t0, t1) {
+      this.societyButton = t0;
+      this.societyText = t1;
+    },
+    createHome_closure10: function createHome_closure10() {
     },
     createTuts_closure: function createTuts_closure() {
     },
@@ -7530,6 +7593,12 @@
     get$onMouseDown(receiver) {
       return new A._ElementEventStreamImpl(receiver, "mousedown", false, type$._ElementEventStreamImpl_MouseEvent);
     },
+    get$onMouseEnter(receiver) {
+      return new A._ElementEventStreamImpl(receiver, "mouseenter", false, type$._ElementEventStreamImpl_MouseEvent);
+    },
+    get$onMouseLeave(receiver) {
+      return new A._ElementEventStreamImpl(receiver, "mouseleave", false, type$._ElementEventStreamImpl_MouseEvent);
+    },
     $isElement: 1
   };
   A.Event.prototype = {$isEvent: 1};
@@ -8680,6 +8749,12 @@
     },
     get$onMouseDown(receiver) {
       return new A._ElementEventStreamImpl(receiver, "mousedown", false, type$._ElementEventStreamImpl_MouseEvent);
+    },
+    get$onMouseEnter(receiver) {
+      return new A._ElementEventStreamImpl(receiver, "mouseenter", false, type$._ElementEventStreamImpl_MouseEvent);
+    },
+    get$onMouseLeave(receiver) {
+      return new A._ElementEventStreamImpl(receiver, "mouseleave", false, type$._ElementEventStreamImpl_MouseEvent);
     }
   };
   A.Transform.prototype = {$isTransform: 1};
@@ -8887,6 +8962,40 @@
       t1 = window;
       t1.toString;
       B.Window_methods.open$2(t1, "terms.html", "_blank");
+    },
+    $signature: 0
+  };
+  A.createHome_closure8.prototype = {
+    call$1($event) {
+      type$.MouseEvent._as($event);
+      this.societyButton.setAttribute("fill", "DarkOrange");
+      this.societyText.setAttribute("fill", "black");
+    },
+    $signature: 0
+  };
+  A.createHome_closure9.prototype = {
+    call$1($event) {
+      var t1;
+      type$.MouseEvent._as($event);
+      t1 = this.societyButton;
+      t1.setAttribute("x", "910");
+      t1.setAttribute("y", "0");
+      t1.setAttribute("width", "80");
+      t1.setAttribute("height", "57");
+      t1.setAttribute("fill", "Maroon");
+      t1.setAttribute("fill-opacity", "0.5");
+      t1.setAttribute("cursor", "pointer");
+      this.societyText.setAttribute("fill", "white");
+    },
+    $signature: 0
+  };
+  A.createHome_closure10.prototype = {
+    call$1($event) {
+      var t1;
+      type$.MouseEvent._as($event);
+      t1 = window;
+      t1.toString;
+      B.Window_methods.open$2(t1, "https://discord.gg/znC3MUagHn", "_blank");
     },
     $signature: 0
   };
@@ -9193,7 +9302,7 @@
     _inheritMany(A.EfficientLengthIterable, [A.ListIterable, A.LinkedHashMapKeysIterable]);
     _inherit(A.MappedListIterable, A.ListIterable);
     _inherit(A.NullError, A.TypeError);
-    _inheritMany(A.Closure, [A.Closure0Args, A.Closure2Args, A.TearOffClosure, A.initHooks_closure, A.initHooks_closure1, A._AsyncRun__initializeScheduleImmediate_internalCallback, A._AsyncRun__initializeScheduleImmediate_closure, A._Future__propagateToListeners_handleWhenCompleteCallback_closure, A.Stream_length_closure, A._RootZone_bindUnaryCallbackGuarded_closure, A._EventStreamSubscription_closure, A.CssClassSetImpl_add_closure, A.CssClassSetImpl_addAll_closure, A.loadscript_closure, A.main_closure, A.fromHtmlRToTuts_animate, A.fromTutsGoToHtml_animate, A.createHome_closure, A.createHome_closure0, A.createHome_closure1, A.createHome_closure2, A.createHome_closure3, A.createHome_closure4, A.createHome_closure5, A.createHome_closure6, A.createHome_closure7, A.createTuts_closure, A.createTuts_closure0, A.fromTutsGoToHome_animate, A.fromHomeGoToTuts_animate, A.createAbout_closure, A.createContact_closure, A.createContact_closure0, A.createFooter_closure, A.fromContactGoToHome_animate, A.fromFooterGoToContact_animate, A.fromHomeGoToAbout_animate, A.fromAboutGoToHome_animate, A.fromContactGoToFooter_animate, A.fromHomeGoToContact_animate, A.buildPage1_closure, A.buildPage1_closure0, A.showOnboarding_closure, A.buildPage2_closure, A.loadcss_closure, A.loadcss_closure0]);
+    _inheritMany(A.Closure, [A.Closure0Args, A.Closure2Args, A.TearOffClosure, A.initHooks_closure, A.initHooks_closure1, A._AsyncRun__initializeScheduleImmediate_internalCallback, A._AsyncRun__initializeScheduleImmediate_closure, A._Future__propagateToListeners_handleWhenCompleteCallback_closure, A.Stream_length_closure, A._RootZone_bindUnaryCallbackGuarded_closure, A._EventStreamSubscription_closure, A.CssClassSetImpl_add_closure, A.CssClassSetImpl_addAll_closure, A.loadscript_closure, A.main_closure, A.fromHtmlRToTuts_animate, A.fromTutsGoToHtml_animate, A.createHome_closure, A.createHome_closure0, A.createHome_closure1, A.createHome_closure2, A.createHome_closure3, A.createHome_closure4, A.createHome_closure5, A.createHome_closure6, A.createHome_closure7, A.createHome_closure8, A.createHome_closure9, A.createHome_closure10, A.createTuts_closure, A.createTuts_closure0, A.fromTutsGoToHome_animate, A.fromHomeGoToTuts_animate, A.createAbout_closure, A.createContact_closure, A.createContact_closure0, A.createFooter_closure, A.fromContactGoToHome_animate, A.fromFooterGoToContact_animate, A.fromHomeGoToAbout_animate, A.fromAboutGoToHome_animate, A.fromContactGoToFooter_animate, A.fromHomeGoToContact_animate, A.buildPage1_closure, A.buildPage1_closure0, A.showOnboarding_closure, A.buildPage2_closure, A.loadcss_closure, A.loadcss_closure0]);
     _inheritMany(A.TearOffClosure, [A.StaticClosure, A.BoundClosure]);
     _inherit(A.JsLinkedHashMap, A.MapBase);
     _inheritMany(A.Closure2Args, [A.initHooks_closure0, A._Future__propagateToListeners_handleWhenCompleteCallback_closure0, A.MapBase_mapToString_closure, A.MidiInputMap_keys_closure, A.MidiOutputMap_keys_closure, A.RtcStatsReport_keys_closure, A.Storage_keys_closure, A._StructuredClone_walk_closure, A._StructuredClone_walk_closure0, A.AudioParamMap_keys_closure, A.buildPage2__closure]);

@@ -557,10 +557,93 @@ footer
   ..append(copyright);
 
 
+// -------------------------
+// JOIN SOCIETY
+// -------------------------
+
+final joinGroup = document.createElementNS(svgcdn, 'g')
+  ..setAttribute('id', 'join-society')
+  ..setAttribute('class', 'nav-button');
+
+// "Join to"
+final joinText1 = document.createElementNS(svgcdn, 'text')
+  ..text = 'Join'
+  ..setAttribute('x', '900')
+  ..setAttribute('y', '45')
+  ..setAttribute('font-size', '15')
+  ..setAttribute('fill', 'white')
+  ..setAttribute('opacity', '0.75')
+  ..setAttribute('text-anchor', 'end')
+  ..setAttribute('pointer-events', 'none');
+
+// Society button
+final societyButton = document.createElementNS(svgcdn, 'rect')
+  ..setAttribute('x', '910')
+  ..setAttribute('y', '0')
+  ..setAttribute('width', '80')
+  ..setAttribute('height', '57')
+  ..setAttribute('fill', 'Maroon')
+  ..setAttribute('fill-opacity', '0.5')
+  ..setAttribute('cursor', 'pointer');
+
+// Society text
+final societyText = document.createElementNS(svgcdn, 'text')
+  ..text = 'Society'
+  ..setAttribute('x', '950')
+  ..setAttribute('y', '45')
+  ..setAttribute('font-size', '17')
+  ..setAttribute('fill', 'white')
+  ..setAttribute('text-anchor', 'middle')
+  ..setAttribute('pointer-events', 'none');
+
+// "and become a Dartist"
+final joinText2 = document.createElementNS(svgcdn, 'text')
+  ..text = 'and become a Dartist'
+  ..setAttribute('x', '1000')
+  ..setAttribute('y', '45')
+  ..setAttribute('font-size', '15')
+  ..setAttribute('fill', 'white')
+  ..setAttribute('opacity', '0.75')
+  ..setAttribute('text-anchor', 'start')
+  ..setAttribute('pointer-events', 'none');
+
+// Hover effect
+societyButton.onMouseEnter.listen((event) {
+  societyButton
+    ..setAttribute('fill', 'DarkOrange');
+  societyText.setAttribute('fill', 'black');
+});
+
+societyButton.onMouseLeave.listen((event) {
+  societyButton
+  ..setAttribute('x', '910')
+  ..setAttribute('y', '0')
+  ..setAttribute('width', '80')
+  ..setAttribute('height', '57')
+  ..setAttribute('fill', 'Maroon')
+  ..setAttribute('fill-opacity', '0.5')
+  ..setAttribute('cursor', 'pointer');
+
+  societyText.setAttribute('fill', 'white');
+});
+
+// Click
+societyButton.onClick.listen((event) {
+  window.open('https://discord.gg/znC3MUagHn', '_blank');
+});
+
+joinGroup
+  ..append(joinText1)
+  ..append(societyButton)
+  ..append(societyText)
+  ..append(joinText2);
+
+
   button..append(circle)..append(text)..append(gotoabout);
   button1..append(circle1)..append(text1)..append(gotosupport);
   button2..append(circle2)..append(text2)..append(gototutorials);
-  home..append(logo)..append(logo1)..append(logo2)..append(button)..append(button1)..append(button2)..append(editorButton)..append(footer);
+  home..append(logo)..append(logo1)..append(logo2)..append(button)..append(button1)..append(button2)
+  ..append(editorButton)..append(footer)..append(joinGroup);
 }
 
 void createTuts() {
