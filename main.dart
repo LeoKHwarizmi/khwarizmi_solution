@@ -1,6 +1,4 @@
 import 'dart:html';
-import 'style.dart';
-import 'action.dart';
 import 'dart:math' as math;
 import 'page1.dart';
 import 'page2.dart';

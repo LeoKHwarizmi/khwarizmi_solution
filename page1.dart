@@ -11,7 +11,7 @@ Element buildPage1() {
   final course_number_circle = document.createElementNS(svgcdn, 'circle')..setAttribute('cx', '200')..setAttribute('cy', '10')..setAttribute('r', '35')..setAttribute('fill', 'white');
   final course_number = document.createElementNS(svgcdn, 'text')..text = '01'..setAttribute('x', '175')..setAttribute('y', '30')..setAttribute('font-size', '30')..setAttribute('font-weight', '1000')..setAttribute('font-family', 'Impact')..setAttribute('fill', 'CadetBlue');
   final course_title = document.createElementNS(svgcdn, 'text')..text = '.Tag'..setAttribute('x', '15')..setAttribute('y', '20')..setAttribute('font-size', '10')..setAttribute('font-weight', '800')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'RoyalBlue');
-  final course_subtitle = document.createElementNS(svgcdn, 'text')..text = 'DOCTYPE'..setAttribute('x', '38')..setAttribute('y', '30')..setAttribute('font-size', '10')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'white');
+  final course_subtitle = document.createElementNS(svgcdn, 'text')..text = 'dart:html'..setAttribute('x', '38')..setAttribute('y', '30')..setAttribute('font-size', '10')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'white');
   final defs = document.createElementNS(svgcdn, 'defs');
   final clipPath = document.createElementNS(svgcdn, 'clipPath')..setAttribute('id', 'roundedImage');
   final roundedRect = document.createElementNS(svgcdn, 'rect')..setAttribute('x', '20')..setAttribute('y', '40')..setAttribute('width', '170')..setAttribute('height', '60')..setAttribute('rx', '5')..setAttribute('ry', '5');

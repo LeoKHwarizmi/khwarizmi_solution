@@ -5227,7 +5227,7 @@
       course_title.setAttribute(_s11_0, _s15_);
       course_title.setAttribute(_s4_, "RoyalBlue");
       course_subtitle = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
-      J.set$text$x(course_subtitle, "DOCTYPE");
+      J.set$text$x(course_subtitle, "dart:html");
       course_subtitle.setAttribute(_s1_, "38");
       course_subtitle.setAttribute(_s1_0, _s2_1);
       course_subtitle.setAttribute(_s9_0, _s2_);
