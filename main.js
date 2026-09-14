@@ -5306,7 +5306,7 @@
       hr1.setAttribute("stroke", _s5_2);
       hr1.setAttribute(_s12_, "0.5");
       footer_content = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
-      J.set$text$x(footer_content, "Basic Tags: doctype, html, head, body");
+      J.set$text$x(footer_content, "Basic Tags: tags, imports");
       footer_content.setAttribute(_s1_, _s2_0);
       footer_content.setAttribute(_s1_0, "281");
       footer_content.setAttribute(_s9_0, "4");

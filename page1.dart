@@ -25,7 +25,7 @@ Element buildPage1() {
   // footer
   final footer_title = document.createElementNS(svgcdn, 'text')..text = 'Learn Goal'..setAttribute('x', '95')..setAttribute('y', '273')..setAttribute('font-size', '4')..setAttribute('font-weight', '500')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
   final hr1 = document.createElementNS(svgcdn, 'line')..setAttribute('x1', '30')..setAttribute('y1', '275')..setAttribute('x2', '180')..setAttribute('y2', '275')..setAttribute('stroke', 'green')..setAttribute('stroke-width', '0.5');
-  final footer_content = document.createElementNS(svgcdn, 'text')..text = 'Basic Tags: doctype, html, head, body'..setAttribute('x', '35')..setAttribute('y', '281')..setAttribute('font-size', '4')..setAttribute('font-weight', '500')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
+  final footer_content = document.createElementNS(svgcdn, 'text')..text = 'Basic Tags: tags, imports'..setAttribute('x', '35')..setAttribute('y', '281')..setAttribute('font-size', '4')..setAttribute('font-weight', '500')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
   final hr2 = document.createElementNS(svgcdn, 'line')..setAttribute('x1', '30')..setAttribute('y1', '285')..setAttribute('x2', '180')..setAttribute('y2', '285')..setAttribute('stroke', 'green')..setAttribute('stroke-width', '0.5');
 
   svg..append(footer_title)..append(hr1)..append(footer_content)..append(hr2);
