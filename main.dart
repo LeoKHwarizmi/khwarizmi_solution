@@ -2,6 +2,8 @@ import 'dart:html';
 import 'dart:math' as math;
 import 'page1.dart';
 import 'page2.dart';
+import 'page3.dart';
+import 'page4.dart';
 import 'style.dart';
 import 'action.dart';
 
@@ -35,9 +37,14 @@ if ((window.location.pathname ?? "").endsWith("html.html")) {
 
 final page1 = buildPage1();
 final page2 = buildPage2();
+final page3 = buildPage3();
+final page4 = buildPage4();
 
 // If buildPage2 crashes, at least page1 still shows:
-document.body!..append(page1)..append(Element.tag('br'))..append(page2);
+document.body!..append(page1)
+..append(Element.tag('br'))..append(page2)
+..append(Element.tag('br'))..append(page3)
+..append(Element.tag('br'))..append(page4);
 
   // Change URL from /html.html to /
   window.history.replaceState(null, '', '/khwarizmi_solution/');

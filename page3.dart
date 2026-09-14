@@ -1,6 +1,6 @@
 import 'dart:html';
 
-Element buildPage1() {
+Element buildPage3() {
   const svgcdn = 'http://www.w3.org/2000/svg';
 
   final sec = Element.tag('section')..classes.addAll(['section']);
@@ -9,9 +9,9 @@ Element buildPage1() {
   // header
   final course_banner = document.createElementNS(svgcdn, 'polygon')..setAttribute('points', '0,0 210,0 210,60 0,70')..setAttribute('fill', 'CadetBlue');
   final course_number_circle = document.createElementNS(svgcdn, 'circle')..setAttribute('cx', '200')..setAttribute('cy', '10')..setAttribute('r', '35')..setAttribute('fill', 'white');
-  final course_number = document.createElementNS(svgcdn, 'text')..text = '01'..setAttribute('x', '175')..setAttribute('y', '30')..setAttribute('font-size', '30')..setAttribute('font-weight', '1000')..setAttribute('font-family', 'Impact')..setAttribute('fill', 'CadetBlue');
+  final course_number = document.createElementNS(svgcdn, 'text')..text = '02'..setAttribute('x', '175')..setAttribute('y', '30')..setAttribute('font-size', '30')..setAttribute('font-weight', '1000')..setAttribute('font-family', 'Impact')..setAttribute('fill', 'CadetBlue');
   final course_title = document.createElementNS(svgcdn, 'text')..text = '.Tag'..setAttribute('x', '15')..setAttribute('y', '20')..setAttribute('font-size', '10')..setAttribute('font-weight', '800')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'RoyalBlue');
-  final course_subtitle = document.createElementNS(svgcdn, 'text')..text = 'dart:html'..setAttribute('x', '38')..setAttribute('y', '30')..setAttribute('font-size', '10')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'white');
+  final course_subtitle = document.createElementNS(svgcdn, 'text')..text = 'void main'..setAttribute('x', '38')..setAttribute('y', '30')..setAttribute('font-size', '10')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'white');
   final defs = document.createElementNS(svgcdn, 'defs');
   final clipPath = document.createElementNS(svgcdn, 'clipPath')..setAttribute('id', 'roundedImage');
   final roundedRect = document.createElementNS(svgcdn, 'rect')..setAttribute('x', '20')..setAttribute('y', '40')..setAttribute('width', '170')..setAttribute('height', '60')..setAttribute('rx', '5')..setAttribute('ry', '5');
@@ -25,7 +25,7 @@ Element buildPage1() {
   // footer
   final footer_title = document.createElementNS(svgcdn, 'text')..text = 'Learn Goal'..setAttribute('x', '95')..setAttribute('y', '273')..setAttribute('font-size', '4')..setAttribute('font-weight', '500')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
   final hr1 = document.createElementNS(svgcdn, 'line')..setAttribute('x1', '30')..setAttribute('y1', '275')..setAttribute('x2', '180')..setAttribute('y2', '275')..setAttribute('stroke', 'green')..setAttribute('stroke-width', '0.5');
-  final footer_content = document.createElementNS(svgcdn, 'text')..text = 'Basic Tags: tags, imports'..setAttribute('x', '35')..setAttribute('y', '281')..setAttribute('font-size', '4')..setAttribute('font-weight', '500')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
+  final footer_content = document.createElementNS(svgcdn, 'text')..text = 'Basic Tags: void main'..setAttribute('x', '35')..setAttribute('y', '281')..setAttribute('font-size', '4')..setAttribute('font-weight', '500')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
   final hr2 = document.createElementNS(svgcdn, 'line')..setAttribute('x1', '30')..setAttribute('y1', '285')..setAttribute('x2', '180')..setAttribute('y2', '285')..setAttribute('stroke', 'green')..setAttribute('stroke-width', '0.5');
 
   svg..append(footer_title)..append(hr1)..append(footer_content)..append(hr2);
@@ -43,9 +43,9 @@ Element buildPage1() {
   final practice2a_line1 = document.createElementNS(svgcdn, 'rect')..setAttribute('x', '30')..setAttribute('y', '167')..setAttribute('width', '1')..setAttribute('height', '10')..setAttribute('fill', 'SteelBlue');
   final practice2a_description1 = document.createElementNS(svgcdn, 'text')..text = 'A code that define how a web browser must format and display contents'..setAttribute('x', '35')..setAttribute('y', '173')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'SteelBlue');
   
-  final practice2a_wort2 = document.createElementNS(svgcdn, 'text')..text = 'dart:html'..setAttribute('x', '30')..setAttribute('y', '188')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
+  final practice2a_wort2 = document.createElementNS(svgcdn, 'text')..text = 'void main'..setAttribute('x', '30')..setAttribute('y', '188')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
   final practice2a_line2 = document.createElementNS(svgcdn, 'rect')..setAttribute('x', '30')..setAttribute('y', '192')..setAttribute('width', '1')..setAttribute('height', '10')..setAttribute('fill', 'SteelBlue');
-  final practice2a_description2 = document.createElementNS(svgcdn, 'text')..text = 'This will add web/browser API into your Dart program.'..setAttribute('x', '35')..setAttribute('y', '198')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'SteelBlue');
+  final practice2a_description2 = document.createElementNS(svgcdn, 'text')..text = 'This will tells Dart where your program starts.'..setAttribute('x', '35')..setAttribute('y', '198')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'SteelBlue');
 
   final practice3a = document.createElementNS(svgcdn, 'text')..text = 'c'..setAttribute('x', '20')..setAttribute('y', '222')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
   final practice3a_title = document.createElementNS(svgcdn, 'text')..text = 'How you code it?'..setAttribute('x', '30')..setAttribute('y', '222')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
