@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Sybil Studio Documentation</title>
+
+<meta
+    name="description"
+    content="Sybil Studio documentation for the Dart Web IDE by Omrani Research Industries."
+>
+
+<style>
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: AliceBlue;
+        color: #222;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.7;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 40px;
+        background: white;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    h2 {
+        margin-top: 45px;
+        font-size: 25px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8px;
+    }
+
+    h3 {
+        margin-top: 30px;
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    ul {
+        padding-left: 25px;
+    }
+
+    li {
+        margin: 7px 0;
+    }
+
+    a {
+        color: #333;
+        text-decoration: underline;
+    }
+
+    .effective-date {
+        color: #666;
+        margin-top: -10px;
+        margin-bottom: 35px;
+    }
+
+    .notice {
+        background: #f5f5f5;
+        padding: 20px;
+        margin: 20px 0;
+        border-left: 4px solid #ccc;
+    }
+
+    .tip {
+        background: #f5f5f5;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .code {
+        background: #f5f5f5;
+        padding: 18px;
+        margin: 20px 0;
+        overflow-x: auto;
+        box-sizing: border-box;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 14px;
+        line-height: 1.6;
+        white-space: pre;
+    }
+
+    code {
+        font-family: Consolas, "Courier New", monospace;
+        background: #f5f5f5;
+        padding: 2px 5px;
+    }
+
+    .shortcut {
+        display: inline-block;
+        padding: 2px 7px;
+        background: #f5f5f5;
+        border: 1px solid #ddd;
+        font-family: Consolas, "Courier New", monospace;
+        font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+
+        .container {
+            margin: 0;
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+    }
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>SYBIL STUDIO DOCUMENTATION</h1>
+
+<p class="effective-date">
+    Sybil Studio - Dart Web IDE
+</p>
+
+<p>
+    <strong>Sybil Studio</strong> is a browser-based Dart Web IDE
+    developed by <strong>Omrani Research Industries</strong>. It is a first real multi-file Dart-Web Online IDE.
+    It provides a simple environment for writing, running, saving,
+    and previewing Dart web applications directly from a web browser.
+</p>
+
+<p>
+    Sybil Studio is designed to make Dart web development easier
+    to experiment with by bringing the editor, project files,
+    execution controls, preview, and output together in one
+    interface.
+</p>
+
+<div class="notice">
+    <strong>Welcome to Sybil Studio.</strong>
+    This documentation explains the main editor features,
+    file structure, controls, keyboard shortcuts, preview system,
+    and basic workflow for creating Dart web applications.
+</div>
+
+<h2>1. Getting Started</h2>
+
+<h3>1.1. Opening Sybil Studio</h3>
+
+<p>
+    Sybil Studio runs in a web browser. No traditional desktop
+    IDE installation is required to use the editor interface.
+</p>
+
+<p>
+    After opening Sybil Studio, the main editor provides the
+    tools required to work with a small Dart web project.
+</p>
+
+<p>
+    The basic workflow is:
+</p>
+
+<ul>
+
+
+<li>Open Sybil Studio.</li>
+
+<li>Choose a project file.</li>
+
+<li>Write or modify the code.</li>
+
+<li>Run the project.</li>
+
+<li>Inspect the Preview and OUTPUT panels.</li>
+
+<li>Save your work when needed.</li>
+
+
+</ul>
+
+<h3>1.2. Your First Dart Program</h3>
+
+<p>
+    A simple Dart program can begin with a
+    <code>main()</code> function.
+</p>
+
+<div class="code">void main() {
+  print('Hello from Sybil Studio!');
+}</div>
+
+<p>
+    Press <span class="shortcut">Ctrl + Enter</span> to run the
+    project.
+</p>
+
+<h2>2. Sybil Studio Interface</h2>
+
+<h3>2.1. Header</h3>
+
+<p>
+    The Sybil Studio header identifies the editor and provides
+    access to the main editor controls.
+</p>
+
+<p>
+    The editor is presented as:
+</p>
+
+<div class="code">Sybil Studio - Dart Web IDE</div>
+
+<p>
+    The interface also identifies Sybil Studio as an
+    <strong>Omrani Research Industries</strong> product.
+</p>
+
+<h3>2.2. Toolbar</h3>
+
+<p>
+    The toolbar contains the primary actions used while working
+    on a project.
+</p>
+
+<p>
+    The available controls are:
+</p>
+
+<ul>
+
+
+<li><strong>Run</strong> - compile and run the current project.</li>
+
+<li><strong>Save</strong> - save the current editor contents.</li>
+
+<li><strong>Clear</strong> - clear the current editor content.</li>
+
+<li><strong>+ New File</strong> - create a new project file.</li>
+
+
+</ul>
+
+<h3>2.3. File Tabs</h3>
+
+<p>
+    Sybil Studio provides tabs for the main project files.
+</p>
+
+<p>
+    The standard editor includes:
+</p>
+
+<ul>
+
+
+<li><code>main.dart</code></li>
+
+<li><code>index.html</code></li>
+
+<li><code>styles.css</code></li>
+
+
+</ul>
+
+<p>
+    Selecting a tab changes the active file in the editor.
+</p>
+
+<h2>3. Project Files</h2>
+
+<h3>3.1. main.dart</h3>
+
+<p>
+    The <code>main.dart</code> file contains the Dart source code
+    for the application.
+</p>
+
+<p>
+    A basic Dart web application can start with:
+</p>
+
+<div class="code">import 'dart:html';
+
+void main() {
+print('Hello from Sybil Studio!');
+}</div>
+
+<p>
+    The Dart language provides the programming logic used by
+    the application.
+</p>
+
+<h3>3.2. index.html</h3>
+
+<p>
+    The <code>index.html</code> file provides the HTML document
+    used by the web application.
+</p>
+
+<div class="code">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+<head>
+<title>My Dart App</title>
+</head>
+
+<body>
+
+
+&lt;h1&gt;Hello from Dart Web&lt;/h1&gt;
+
+
+</body>
+
+</html></div>
+
+<p>
+    HTML defines the structure and content of the web page.
+</p>
+
+<h3>3.3. styles.css</h3>
+
+<p>
+    The <code>styles.css</code> file controls the visual appearance
+    of the web page.
+</p>
+
+<div class="code">body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+h1 {
+font-size: 32px;
+}</div>
+
+<p>
+    CSS can be used to change fonts, spacing, dimensions,
+    positioning, colors, borders, and other visual properties.
+</p>
+
+<h2>4. The Code Editor</h2>
+
+<h3>4.1. Writing Code</h3>
+
+<p>
+    The main editor is where the active project file is edited.
+    Dart source code, HTML, and CSS can be modified depending on
+    the selected file.
+</p>
+
+<p>
+    The editor is designed to provide a simple environment for
+    experimenting with Dart web applications without requiring
+    a large development environment.
+</p>
+
+<h3>4.2. Line Numbers</h3>
+
+<p>
+    Sybil Studio displays line numbers alongside the editor.
+    Line numbers make it easier to identify the location of
+    code and errors.
+</p>
+
+<h3>4.3. Tab Key</h3>
+
+<p>
+    Pressing the <span class="shortcut">Tab</span> key inside the
+    editor inserts four spaces.
+</p>
+
+<div class="tip">
+    <strong>Tip:</strong>
+    Consistent indentation makes Dart, HTML, and CSS code easier
+    to read and maintain.
+</div>
+
+<h2>5. Running a Project</h2>
+
+<h3>5.1. Run Button</h3>
+
+<p>
+    The <strong>Run</strong> button starts the compilation and
+    execution process for the current project.
+</p>
+
+<p>
+    When the project is successfully processed, the result can
+    be displayed in the Preview panel.
+</p>
+
+<h3>5.2. Keyboard Shortcut</h3>
+
+<p>
+    You can run the project without clicking the toolbar by
+    pressing:
+</p>
+
+<div class="code">Ctrl + Enter</div>
+
+<p>
+    This shortcut is useful when repeatedly testing changes.
+</p>
+
+<h2>6. Preview</h2>
+
+<h3>6.1. Preview Panel</h3>
+
+<p>
+    The Preview panel displays the resulting web application
+    inside the Sybil Studio interface.
+</p>
+
+<p>
+    This allows HTML, CSS, and Dart changes to be tested without
+    leaving the editor.
+</p>
+
+<h3>6.2. Testing Web Interactions</h3>
+
+<p>
+    Web applications can contain interactive HTML elements that
+    respond to Dart events.
+</p>
+
+<p>
+    For example, a button can be defined in HTML:
+</p>
+
+<div class="code">&lt;button id="hello"&gt;
+    Say Hello
+&lt;/button&gt;</div>
+
+<p>
+    Dart can then attach an event listener to the button.
+</p>
+
+<div class="code">import 'dart:html';
+
+void main() {
+
+final button = querySelector('#hello');
+
+button?.onClick.listen((event) {
+window.alert('Hello from Dart!');
+});
+
+}</div>
+
+<h2>7. OUTPUT Panel</h2>
+
+<h3>7.1. Program Output</h3>
+
+<p>
+    The OUTPUT panel displays information produced during the
+    execution process.
+</p>
+
+<p>
+    For example:
+</p>
+
+<div class="code">void main() {
+  print('Hello from Sybil Studio!');
+}</div>
+
+<p>
+    The printed message can appear in the output area after
+    running the project.
+</p>
+
+<h3>7.2. Errors</h3>
+
+<p>
+    If the compiler or execution process encounters an error,
+    information about the error can be displayed in the OUTPUT
+    panel.
+</p>
+
+<p>
+    Use the reported information to locate the problem in the
+    relevant file and line.
+</p>
+
+<h2>8. Saving Your Work</h2>
+
+<h3>8.1. Save Button</h3>
+
+<p>
+    The <strong>Save</strong> button stores the current editor
+    contents.
+</p>
+
+<p>
+    Sybil Studio also uses browser storage to preserve editor
+    content between sessions where supported by the browser.
+</p>
+
+<h3>8.2. Save Shortcut</h3>
+
+<p>
+    The keyboard shortcut for saving is:
+</p>
+
+<div class="code">Ctrl + S</div>
+
+<h2>9. Creating a New File</h2>
+
+<p>
+    The <strong>+ New File</strong> button allows another project
+    file to be created.
+</p>
+
+<p>
+    New files can be used to organize additional Dart, HTML,
+    or CSS source code as the project grows.
+</p>
+
+<div class="tip">
+    <strong>Tip:</strong>
+    Keep files organized according to their purpose. Dart files
+    should contain application logic, HTML files should define
+    document structure, and CSS files should contain presentation
+    rules.
+</div>
+
+<h2>10. Clearing a File</h2>
+
+<p>
+    The <strong>Clear</strong> button removes the contents of the
+    active editor.
+</p>
+
+<div class="notice">
+    <strong>Important:</strong>
+    Be careful when using Clear. Make sure you have saved anything
+    you want to keep before removing the contents of a file.
+</div>
+
+<h2>11. Building a Simple Web Application</h2>
+
+<h3>11.1. HTML</h3>
+
+<p>
+    Begin by creating a simple HTML structure.
+</p>
+
+<div class="code">&lt;h1 id="title"&gt;
+    Hello from Dart Web
+&lt;/h1&gt;
+
+<button id="hello">
+Click Me
+</button></div>
+
+<h3>11.2. CSS</h3>
+
+<p>
+    Add styling to the page.
+</p>
+
+<div class="code">body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+button {
+padding: 10px 20px;
+}</div>
+
+<h3>11.3. Dart</h3>
+
+<p>
+    Dart can connect the HTML interface to application logic.
+</p>
+
+<div class="code">import 'dart:html';
+
+void main() {
+
+final button = querySelector('#hello');
+final title = querySelector('#title');
+
+button?.onClick.listen((event) {
+
+
+if (title != null) {
+  title.text = 'Hello from Dart!';
+}
+
+
+});
+
+}</div>
+
+<h3>11.4. Run the Application</h3>
+
+<p>
+    Press <span class="shortcut">Ctrl + Enter</span> or click
+    <strong>Run</strong>.
+</p>
+
+<p>
+    The application should appear in the Preview panel.
+</p>
+
+<h2>12. Browser Storage</h2>
+
+<p>
+    Sybil Studio uses browser storage to preserve editor content.
+    The editor maintains separate storage for its project files.
+</p>
+
+<p>
+    The standard storage entries correspond to:
+</p>
+
+<ul>
+
+
+<li><code>main.dart</code></li>
+
+<li><code>index.html</code></li>
+
+<li><code>styles.css</code></li>
+
+
+</ul>
+
+<p>
+    This allows the editor contents to remain available when the
+    user returns to the editor in the same browser environment.
+</p>
+
+<h2>13. Keyboard Shortcuts</h2>
+
+<p>
+    Sybil Studio provides several keyboard shortcuts for common
+    operations.
+</p>
+
+<ul>
+
+
+<li>
+    <strong>Ctrl + Enter</strong> -
+    Run the project.
+</li>
+
+<li>
+    <strong>Ctrl + S</strong> -
+    Save the current project.
+</li>
+
+<li>
+    <strong>Tab</strong> -
+    Insert four spaces in the editor.
+</li>
+
+
+</ul>
+
+<h2>14. Dart Web Development</h2>
+
+<p>
+    Sybil Studio is designed around Dart web development.
+    Dart supports web applications and provides access to browser
+    functionality and JavaScript interoperability.
+</p>
+
+<p>
+    Modern Dart web development commonly uses
+    <code>package:web</code> for browser APIs, while older projects
+    may use libraries such as <code>dart:html</code>. The current
+    Dart documentation describes <code>package:web</code> as the
+    recommended web interop solution.
+</p>
+
+<p>
+    Sybil Studio examples may use the APIs supported by its current
+    compiler and project configuration.
+</p>
+
+<h2>15. Compilation</h2>
+
+<p>
+    Dart web applications must be compiled before the browser can
+    execute the resulting web application.
+</p>
+
+<p>
+    Dart's web tooling provides development and production
+    compilation workflows for web applications.
+</p>
+
+<p>
+    In Sybil Studio, the compilation process is integrated into
+    the editor workflow so that users can focus on writing and
+    testing their application.
+</p>
+
+<h2>16. Debugging</h2>
+
+<h3>16.1. Finding Problems</h3>
+
+<p>
+    When an application does not behave as expected, first check
+    the OUTPUT panel for compiler or execution information.
+</p>
+
+<p>
+    Then inspect:
+</p>
+
+<ul>
+
+
+<li>The active Dart file.</li>
+
+<li>HTML element identifiers.</li>
+
+<li>CSS selectors.</li>
+
+<li>Event listeners.</li>
+
+<li>Imports.</li>
+
+<li>Syntax and brackets.</li>
+
+
+</ul>
+
+<h3>16.2. Browser Developer Tools</h3>
+
+<p>
+    Browser developer tools can also be useful when debugging
+    web applications, especially for inspecting HTML, CSS,
+    browser errors, and application behavior.
+</p>
+
+<p>
+    Dart's official debugging documentation also describes using
+    Dart DevTools and browser developer tools for debugging Dart
+    web applications.
+</p>
+
+<h2>17. Common Problems</h2>
+
+<h3>17.1. The Preview Is Empty</h3>
+
+<p>
+    Check that the HTML file contains valid content and that the
+    Dart application has successfully compiled.
+</p>
+
+<p>
+    Also check the OUTPUT panel for errors.
+</p>
+
+<h3>17.2. A Button Does Nothing</h3>
+
+<p>
+    Verify that the ID used by the Dart code exactly matches the
+    ID used by the HTML element.
+</p>
+
+<div class="code">&lt;button id="hello"&gt;
+    Click Me
+&lt;/button&gt;</div>
+
+<div class="code">final button = querySelector('#hello');</div>
+
+<h3>17.3. CSS Changes Are Not Visible</h3>
+
+<p>
+    Check that the stylesheet is correctly connected to the HTML
+    document.
+</p>
+
+<div class="code">&lt;link
+    rel="stylesheet"
+    href="styles.css"
+&gt;</div>
+
+<h3>17.4. Dart Code Does Not Compile</h3>
+
+<p>
+    Read the error shown in the OUTPUT panel and inspect the
+    indicated source location.
+</p>
+
+<p>
+    Common causes include syntax errors, incorrect imports,
+    invalid types, missing elements, and unsupported APIs.
+</p>
+
+<h2>18. Recommended Workflow</h2>
+
+<p>
+    A simple development workflow can make projects easier to
+    understand and debug.
+</p>
+
+<ul>
+
+
+<li>Start with a small HTML structure.</li>
+
+<li>Add CSS after the structure works.</li>
+
+<li>Add Dart logic one feature at a time.</li>
+
+<li>Run the project frequently.</li>
+
+<li>Read the OUTPUT panel after each failed run.</li>
+
+<li>Use meaningful names for HTML elements and Dart variables.</li>
+
+<li>Keep related functionality organized.</li>
+
+<li>Save your work regularly.</li>
+
+
+</ul>
+
+<h2>19. Example Project</h2>
+
+<p>
+    A simple Sybil Studio project can consist of three files.
+</p>
+
+<h3>main.dart</h3>
+
+<div class="code">import 'dart:html';
+
+void main() {
+
+final button = querySelector('#hello');
+final message = querySelector('#message');
+
+button?.onClick.listen((event) {
+
+
+if (message != null) {
+  message.text = 'Hello from Sybil Studio!';
+}
+
+
+});
+
+}</div>
+
+<h3>index.html</h3>
+
+<div class="code">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+<head>
+
+
+&lt;title&gt;My Sybil Studio App&lt;/title&gt;
+
+&lt;link
+    rel="stylesheet"
+    href="styles.css"
+&gt;
+
+
+</head>
+
+<body>
+
+
+&lt;h1 id="message"&gt;
+    Welcome to Sybil Studio
+&lt;/h1&gt;
+
+&lt;button id="hello"&gt;
+    Say Hello
+&lt;/button&gt;
+
+
+</body>
+
+</html></div>
+
+<h3>styles.css</h3>
+
+<div class="code">body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+button {
+padding: 10px 20px;
+cursor: pointer;
+}</div>
+
+<h2>20. Learning With Sybil Studio</h2>
+
+<p>
+    Sybil Studio can be used to experiment with Dart programming
+    and browser-based web development.
+</p>
+
+<p>
+    Beginners can start with simple programs and gradually
+    introduce functions, collections, classes, events, HTML,
+    CSS, and asynchronous programming.
+</p>
+
+<p>
+    More experienced developers can use the editor to prototype
+    ideas and create small interactive Dart web applications.
+</p>
+
+<h2>21. Project Limitations</h2>
+
+<p>
+    Sybil Studio is designed as a browser-based development
+    environment. It should not be considered a complete replacement
+    for a full local Dart development environment for every type
+    of project.
+</p>
+
+<p>
+    Larger applications may require a local project structure,
+    additional dependencies, testing tools, build tools, version
+    control, and deployment infrastructure.
+</p>
+
+<p>
+    The capabilities available in Sybil Studio depend on its
+    current compiler, browser environment, and project
+    configuration.
+</p>
+
+<h2>22. Frequently Asked Questions</h2>
+
+<h3>What is Sybil Studio?</h3>
+
+<p>
+    Sybil Studio is a browser-based Dart Web IDE developed by
+    Omrani Research Industries.
+</p>
+
+<h3>Do I need to install an IDE?</h3>
+
+<p>
+    Sybil Studio provides its editor interface directly in the
+    browser, allowing supported Dart web development without
+    requiring a traditional desktop IDE interface.
+</p>
+
+<h3>What files can I edit?</h3>
+
+<p>
+    The standard Sybil Studio editor works with
+    <code>main.dart</code>, <code>index.html</code>, and
+    <code>styles.css</code>, and can create additional files.
+</p>
+
+<h3>How do I run my project?</h3>
+
+<p>
+    Click <strong>Run</strong> or press
+    <span class="shortcut">Ctrl + Enter</span>.
+</p>
+
+<h3>How do I save my project?</h3>
+
+<p>
+    Click <strong>Save</strong> or press
+    <span class="shortcut">Ctrl + S</span>.
+</p>
+
+<h3>Where can I see the result?</h3>
+
+<p>
+    The resulting web application is displayed in the
+    <strong>Preview</strong> panel.
+</p>
+
+<h3>Where can I see errors?</h3>
+
+<p>
+    Check the <strong>OUTPUT</strong> panel after running the
+    project.
+</p>
+
+<h2>23. About Sybil Studio</h2>
+
+<p>
+    Sybil Studio is an Omrani Research Industries product focused
+    on making Dart web development accessible through a simple
+    browser-based development environment.
+</p>
+
+<p>
+    Sybil Studio is part of the software and developer-tool
+    projects developed under the Omrani Research Industries brand.
+</p>
+
+<h2>24. Conclusion</h2>
+
+<p>
+    Sybil Studio brings Dart source code, HTML, CSS, compilation,
+    execution, preview, and output into a single browser-based
+    development environment.
+</p>
+
+<p>
+    Whether you are learning Dart, experimenting with web
+    development, testing an idea, or creating a small interactive
+    application, Sybil Studio provides a straightforward place
+    to write and run Dart web code.
+</p>
+
+<h2>Documentation Updates</h2>
+
+<p>
+    Sybil Studio is an evolving project. Editor features,
+    supported capabilities, compiler behavior, and interface
+    functionality may change as the project develops.
+</p>
+
+<p>
+    For the latest information, use the documentation provided
+    with the current Sybil Studio release.
+</p>
+
+</div>
+
+</body>
+
+</html>

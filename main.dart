@@ -291,7 +291,7 @@ void createHome() {
   ..setAttribute('class', 'page-title1')
   ..setAttribute('text-anchor', 'middle');
 
-final logo2 = document.createElementNS(svgcdn, 'text')
+  final logo2 = document.createElementNS(svgcdn, 'text')
   ..text = 'An Omrani Research Industries Project'
   ..setAttribute('x', 1200 / 2 + 50)
   ..setAttribute('y', 800 / 2 + 15)
@@ -411,12 +411,12 @@ final logo2 = document.createElementNS(svgcdn, 'text')
   });
 
 
-final editorButton = document.createElementNS(svgcdn, 'g')
+  final editorButton = document.createElementNS(svgcdn, 'g')
   ..setAttribute('id', 'editor-button')
   ..setAttribute('class', 'nav-button')
   ..style.cursor = 'pointer';
 
-final editorCircle = document.createElementNS(svgcdn, 'circle')
+  final editorCircle = document.createElementNS(svgcdn, 'circle')
   ..setAttribute('cx', '50')
   ..setAttribute('cy', '400')
   ..setAttribute('r', '28')
@@ -425,7 +425,7 @@ final editorCircle = document.createElementNS(svgcdn, 'circle')
   ..setAttribute('stroke', '#ffffff')
   ..setAttribute('stroke-opacity', '0.25');
 
-final editorText = document.createElementNS(svgcdn, 'text')
+  final editorText = document.createElementNS(svgcdn, 'text')
   ..text = '←'
   ..setAttribute('x', '50')
   ..setAttribute('y', '400')
@@ -442,18 +442,18 @@ final editorText = document.createElementNS(svgcdn, 'text')
   ..setAttribute('fill','Gray',)
   ..setAttribute('pointer-events','none',);
 
-editorButton
+  editorButton
   ..append(editorCircle)
   ..append(editorText)..append(gotoeditor);
 
-editorButton.onClick.listen((event) {
+  editorButton.onClick.listen((event) {
   print('EDITOR BUTTON CLICKED');
 
-window.open(
+  window.open(
   'sybilstudio.dev/',
   '_blank',
-);
-});
+  );
+  });
 
 
 // -------------------------
@@ -932,110 +932,186 @@ void createAbout() {
   final about = createPage('about', 0, -1);
 
   final title1 = document.createElementNS(svgcdn, 'text')
-  ..text = 'Khwarizmi Solution'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '50')
-  ..setAttribute('font-size', '28')
-  ..setAttribute('fill', 'white');
+    ..text = 'Khwarizmi Solution'
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '80')
+    ..setAttribute('font-size', '28')
+    ..setAttribute('fill', 'white');
 
   final text1 = document.createElementNS(svgcdn, 'text')
-  ..text = 'this is one of the Products of the Omrani Research Insustries(ORI)'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '70')
-  ..setAttribute('font-size', '18')
-  ..setAttribute('fill', 'FloralWhite');
+    ..text = 'Khwarizmi Solution is a technology and education project developed by Omrani Research Industries (ORI).'
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '100')
+    ..setAttribute('font-size', '18')
+    ..setAttribute('fill', 'FloralWhite');
 
-  final title2 = document.createElementNS(svgcdn, 'text') 
-  ..text = 'Khwarizmi Online Learning Platform'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '170')
-  ..setAttribute('font-size', '28')
-  ..setAttribute('fill', 'white');
 
-final text2 = document.createElementNS(svgcdn, 'text')
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '190')
-  ..setAttribute('font-size', '18')
-  ..setAttribute('fill', 'FloralWhite');
+  // -------------------------
+  // KHwarizmi ONLINE LEARNING
+  // -------------------------
 
-final line1 = document.createElementNS(svgcdn, 'tspan')
-  ..text = 'this is an online latform that helps people all over the world to learn programming'
-  ..setAttribute('x', '50')
-  ..setAttribute('dy', '0');
+  final title2 = document.createElementNS(svgcdn, 'text')
+    ..text = 'Khwarizmi Online Learning Platform'
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '170')
+    ..setAttribute('font-size', '28')
+    ..setAttribute('fill', 'white');
 
-final line2 = document.createElementNS(svgcdn, 'tspan')
-  ..text = 'and boosts thier minds throth learning programming lnguage, for this product we used Dart Web'
-  ..setAttribute('x', '50')
-  ..setAttribute('dy', '20');
-
-text2
-  ..append(line1)
-  ..append(line2);
-
-/*
   final text2 = document.createElementNS(svgcdn, 'text')
-  ..text = ''
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '190')
-  ..setAttribute('font-size', '18')
-  ..setAttribute('fill', 'FloralWhite');
-*/
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '190')
+    ..setAttribute('font-size', '18')
+    ..setAttribute('fill', 'FloralWhite');
+
+  final line1 = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'An online learning environment created to make programming education more accessible to people around the world.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '0');
+
+  final line2 = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'The platform focuses on practical learning, experimentation, and building real software through programming.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '20');
+
+  final line3 = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'Sybil Studio provides the development environment used to write, test, and run Dart Web applications.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '20');
+
+  text2
+    ..append(line1)
+    ..append(line2)
+    ..append(line3);
+
+
+  // -------------------------
+  // SYBIL STUDIO
+  // -------------------------
 
   final title3 = document.createElementNS(svgcdn, 'text')
-  ..text = 'Sybil Studio'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '290')
-  ..setAttribute('font-size', '28')
-  ..setAttribute('fill', 'white');
+    ..text = 'Sybil Studio'
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '290')
+    ..setAttribute('font-size', '28')
+    ..setAttribute('fill', 'white');
 
   final text3 = document.createElementNS(svgcdn, 'text')
-  ..text = 'this is an first-real Dart web online code editor'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '310')
-  ..setAttribute('font-size', '18')
-  ..setAttribute('fill', 'FloralWhite');
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '310')
+    ..setAttribute('font-size', '18')
+    ..setAttribute('fill', 'FloralWhite');
 
-  final title4 = document.createElementNS(svgcdn, 'text') 
-  ..text = 'Bullseye Dart Engine'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '410')
-  ..setAttribute('font-size', '28')
-  ..setAttribute('fill', 'white');
+  final line3a = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'Sybil Studio is a multi-file Dart Web IDE designed for developing and experimenting with web applications.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '0');
+
+  final line3b = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'It is a product of Omrani Research Industries (ORI) and a core part of the Khwarizmi Solution project.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '20');
+
+  text3
+    ..append(line3a)
+    ..append(line3b);
+
+
+  // -------------------------
+  // BULLSEYE DART ENGINE
+  // -------------------------
+
+  final title4 = document.createElementNS(svgcdn, 'text')
+    ..text = 'Bullseye Dart Engine'
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '410')
+    ..setAttribute('font-size', '28')
+    ..setAttribute('fill', 'white');
 
   final text4 = document.createElementNS(svgcdn, 'text')
-  ..text = 'this is an engine based on dart web programming language and it is the heart of sybil studio'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '430')
-  ..setAttribute('font-size', '18')
-  ..setAttribute('fill', 'FloralWhite');
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '430')
+    ..setAttribute('font-size', '18')
+    ..setAttribute('fill', 'FloralWhite');
+
+  final line4a = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'Bullseye is the Dart engine that powers the core execution workflow of Sybil Studio.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '0');
+
+  final line4b = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'It coordinates the tasks required to process, compile, and run Dart Web code within the platform.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '20');
+
+  text4
+    ..append(line4a)
+    ..append(line4b);
+
+
+  // -------------------------
+  // OMranI RESEARCH INDUSTRIES
+  // -------------------------
 
   final title5 = document.createElementNS(svgcdn, 'text')
-  ..text = 'Omrani Research Industries'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '530')
-  ..setAttribute('font-size', '28')
-  ..setAttribute('fill', 'white');
+    ..text = 'Omrani Research Industries (ORI)'
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '530')
+    ..setAttribute('font-size', '28')
+    ..setAttribute('fill', 'white');
 
   final text5 = document.createElementNS(svgcdn, 'text')
-  ..text = 'this is an startup idea that i created and named it.'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '550')
-  ..setAttribute('font-size', '18')
-  ..setAttribute('fill', 'FloralWhite');
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '550')
+    ..setAttribute('font-size', '18')
+    ..setAttribute('fill', 'FloralWhite');
 
-    final title6 = document.createElementNS(svgcdn, 'text')
-  ..text = 'About Me'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '650')
-  ..setAttribute('font-size', '28')
-  ..setAttribute('fill', 'white');
+  final line5a = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'Omrani Research Industries (ORI) is an independent technology initiative focused on software and digital solutions.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '0');
+
+  final line5b = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'Its mission is to explore technology, develop useful software, and create tools that contribute to a more digital world.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '20');
+
+  text5
+    ..append(line5a)
+    ..append(line5b);
+
+
+  // -------------------------
+  // ABOUT ME
+  // -------------------------
+
+  final title6 = document.createElementNS(svgcdn, 'text')
+    ..text = 'About Me'
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '650')
+    ..setAttribute('font-size', '28')
+    ..setAttribute('fill', 'white');
 
   final text6 = document.createElementNS(svgcdn, 'text')
-  ..text = 'My name is mohammad reze omrani'
-  ..setAttribute('x', '50')
-  ..setAttribute('y', '670')
-  ..setAttribute('font-size', '18')
-  ..setAttribute('fill', 'FloralWhite');
+    ..setAttribute('x', '50')
+    ..setAttribute('y', '670')
+    ..setAttribute('font-size', '18')
+    ..setAttribute('fill', 'FloralWhite');
+
+  final line6a = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'My name is Mohammad Reza Omrani. I am a software engineer and the founder of Omrani Research Industries (ORI).'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '0');
+
+  final line6b = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'I build software and technology projects with a focus on programming, web development, and digital innovation.'
+    ..setAttribute('x', '50')
+    ..setAttribute('dy', '20');
+
+
+  text6
+    ..append(line6a)
+    ..append(line6b);
+
 
   // -------------------------
   // BOTTOM BUTTON
@@ -1063,36 +1139,45 @@ text2
     ..setAttribute('fill', 'white')
     ..setAttribute('pointer-events', 'none');
 
-  final gotohome = document.createElementNS(svgcdn,'text',)..text = 'Home'
-  ..setAttribute('x', 1200 / 2)
-  ..setAttribute('y', 800 - 85)
-  ..setAttribute('text-anchor','middle',)
-  ..setAttribute('font-size','15',)
-  ..setAttribute('fill','Gray',)
-  ..setAttribute('pointer-events','none',);
+  final gotohome = document.createElementNS(svgcdn, 'text')
+    ..text = 'Home'
+    ..setAttribute('x', '600')
+    ..setAttribute('y', '715')
+    ..setAttribute('text-anchor', 'middle')
+    ..setAttribute('font-size', '15')
+    ..setAttribute('fill', 'Gray')
+    ..setAttribute('pointer-events', 'none');
 
   button.onClick.listen((event) {
-
     fromAboutGoToHome();
-
   });
 
   button
     ..append(circle)
-    ..append(text)..append(gotohome);
+    ..append(text)
+    ..append(gotohome);
 
 
   // -------------------------
   // ADD EVERYTHING
   // -------------------------
 
-  about..append(button)..append(title1)..append(text1)
-  ..append(title2)..append(text2)
-  ..append(title3)..append(text3)
-  ..append(title4)..append(text4)
-  ..append(title5)..append(text5)
-  ..append(title6)..append(text6);
+  about
+    ..append(button)
+    ..append(title1)
+    ..append(text1)
+    ..append(title2)
+    ..append(text2)
+    ..append(title3)
+    ..append(text3)
+    ..append(title4)
+    ..append(text4)
+    ..append(title5)
+    ..append(text5)
+    ..append(title6)
+    ..append(text6);
 }
+
 
 
 void createContact() {

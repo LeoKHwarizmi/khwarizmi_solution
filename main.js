@@ -4636,12 +4636,13 @@
       B.Window_methods.requestAnimationFrame$1(t1, new A.fromHomeGoToTuts_animate(start));
     },
     createAbout() {
-      var title1, text1, title2, text2, line1, line2, title3, text3, title4, text4, title5, text5, title6, text6, button, circle, text, gotohome, t2,
+      var title1, text1, title2, text2, line1, line2, line3, title3, text3, line3a, line3b, title4, text4, line4a, line4b, title5, text5, line5a, line5b, title6, text6, line6a, line6b, button, circle, text, gotohome, t2,
         _s26_ = "http://www.w3.org/2000/svg",
         _s4_ = "text", _s1_ = "x", _s2_ = "50", _s1_0 = "y",
         _s9_ = "font-size",
         _s2_0 = "28", _s4_0 = "fill", _s5_ = "white", _s2_1 = "18",
         _s11_ = "FloralWhite",
+        _s5_0 = "tspan", _s2_2 = "dy", _s2_3 = "20",
         _s11_0 = "text-anchor",
         _s14_ = "pointer-events",
         about = A.createPage("about", 0, -1),
@@ -4650,13 +4651,13 @@
       title1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
       J.set$text$x(title1, "Khwarizmi Solution");
       title1.setAttribute(_s1_, _s2_);
-      title1.setAttribute(_s1_0, _s2_);
+      title1.setAttribute(_s1_0, "80");
       title1.setAttribute(_s9_, _s2_0);
       title1.setAttribute(_s4_0, _s5_);
       text1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
-      J.set$text$x(text1, "this is one of the Products of the Omrani Research Insustries(ORI)");
+      J.set$text$x(text1, "Khwarizmi Solution is a technology and education project developed by Omrani Research Industries (ORI).");
       text1.setAttribute(_s1_, _s2_);
-      text1.setAttribute(_s1_0, "70");
+      text1.setAttribute(_s1_0, "100");
       text1.setAttribute(_s9_, _s2_1);
       text1.setAttribute(_s4_0, _s11_);
       title2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
@@ -4670,16 +4671,21 @@
       text2.setAttribute(_s1_0, "190");
       text2.setAttribute(_s9_, _s2_1);
       text2.setAttribute(_s4_0, _s11_);
-      line1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "tspan");
-      J.set$text$x(line1, "this is an online latform that helps people all over the world to learn programming");
+      line1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line1, "An online learning environment created to make programming education more accessible to people around the world.");
       line1.setAttribute(_s1_, _s2_);
-      line1.setAttribute("dy", "0");
-      line2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "tspan");
-      J.set$text$x(line2, "and boosts thier minds throth learning programming lnguage, for this product we used Dart Web");
+      line1.setAttribute(_s2_2, "0");
+      line2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line2, "The platform focuses on practical learning, experimentation, and building real software through programming.");
       line2.setAttribute(_s1_, _s2_);
-      line2.setAttribute("dy", "20");
+      line2.setAttribute(_s2_2, _s2_3);
+      line3 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line3, "Sybil Studio provides the development environment used to write, test, and run Dart Web applications.");
+      line3.setAttribute(_s1_, _s2_);
+      line3.setAttribute(_s2_2, _s2_3);
       text2.appendChild(line1).toString;
       text2.appendChild(line2).toString;
+      text2.appendChild(line3).toString;
       title3 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
       J.set$text$x(title3, "Sybil Studio");
       title3.setAttribute(_s1_, _s2_);
@@ -4687,11 +4693,20 @@
       title3.setAttribute(_s9_, _s2_0);
       title3.setAttribute(_s4_0, _s5_);
       text3 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
-      J.set$text$x(text3, "this is an first-real Dart web online code editor");
       text3.setAttribute(_s1_, _s2_);
       text3.setAttribute(_s1_0, "310");
       text3.setAttribute(_s9_, _s2_1);
       text3.setAttribute(_s4_0, _s11_);
+      line3a = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line3a, "Sybil Studio is a multi-file Dart Web IDE designed for developing and experimenting with web applications.");
+      line3a.setAttribute(_s1_, _s2_);
+      line3a.setAttribute(_s2_2, "0");
+      line3b = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line3b, "It is a product of Omrani Research Industries (ORI) and a core part of the Khwarizmi Solution project.");
+      line3b.setAttribute(_s1_, _s2_);
+      line3b.setAttribute(_s2_2, _s2_3);
+      text3.appendChild(line3a).toString;
+      text3.appendChild(line3b).toString;
       title4 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
       J.set$text$x(title4, "Bullseye Dart Engine");
       title4.setAttribute(_s1_, _s2_);
@@ -4699,23 +4714,41 @@
       title4.setAttribute(_s9_, _s2_0);
       title4.setAttribute(_s4_0, _s5_);
       text4 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
-      J.set$text$x(text4, "this is an engine based on dart web programming language and it is the heart of sybil studio");
       text4.setAttribute(_s1_, _s2_);
       text4.setAttribute(_s1_0, "430");
       text4.setAttribute(_s9_, _s2_1);
       text4.setAttribute(_s4_0, _s11_);
+      line4a = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line4a, "Bullseye is the Dart engine that powers the core execution workflow of Sybil Studio.");
+      line4a.setAttribute(_s1_, _s2_);
+      line4a.setAttribute(_s2_2, "0");
+      line4b = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line4b, "It coordinates the tasks required to process, compile, and run Dart Web code within the platform.");
+      line4b.setAttribute(_s1_, _s2_);
+      line4b.setAttribute(_s2_2, _s2_3);
+      text4.appendChild(line4a).toString;
+      text4.appendChild(line4b).toString;
       title5 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
-      J.set$text$x(title5, "Omrani Research Industries");
+      J.set$text$x(title5, "Omrani Research Industries (ORI)");
       title5.setAttribute(_s1_, _s2_);
       title5.setAttribute(_s1_0, "530");
       title5.setAttribute(_s9_, _s2_0);
       title5.setAttribute(_s4_0, _s5_);
       text5 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
-      J.set$text$x(text5, "this is an startup idea that i created and named it.");
       text5.setAttribute(_s1_, _s2_);
       text5.setAttribute(_s1_0, "550");
       text5.setAttribute(_s9_, _s2_1);
       text5.setAttribute(_s4_0, _s11_);
+      line5a = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line5a, "Omrani Research Industries (ORI) is an independent technology initiative focused on software and digital solutions.");
+      line5a.setAttribute(_s1_, _s2_);
+      line5a.setAttribute(_s2_2, "0");
+      line5b = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line5b, "Its mission is to explore technology, develop useful software, and create tools that contribute to a more digital world.");
+      line5b.setAttribute(_s1_, _s2_);
+      line5b.setAttribute(_s2_2, _s2_3);
+      text5.appendChild(line5a).toString;
+      text5.appendChild(line5b).toString;
       title6 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
       J.set$text$x(title6, "About Me");
       title6.setAttribute(_s1_, _s2_);
@@ -4723,11 +4756,20 @@
       title6.setAttribute(_s9_, _s2_0);
       title6.setAttribute(_s4_0, _s5_);
       text6 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
-      J.set$text$x(text6, "My name is mohammad reze omrani");
       text6.setAttribute(_s1_, _s2_);
       text6.setAttribute(_s1_0, "670");
       text6.setAttribute(_s9_, _s2_1);
       text6.setAttribute(_s4_0, _s11_);
+      line6a = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line6a, "My name is Mohammad Reza Omrani. I am a software engineer and the founder of Omrani Research Industries (ORI).");
+      line6a.setAttribute(_s1_, _s2_);
+      line6a.setAttribute(_s2_2, "0");
+      line6b = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      J.set$text$x(line6b, "I build software and technology projects with a focus on programming, web development, and digital innovation.");
+      line6b.setAttribute(_s1_, _s2_);
+      line6b.setAttribute(_s2_2, _s2_3);
+      text6.appendChild(line6a).toString;
+      text6.appendChild(line6b).toString;
       button = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
       button.setAttribute("id", "button-left");
       button.setAttribute("class", "nav-button");
@@ -4749,8 +4791,8 @@
       text.setAttribute(_s14_, "none");
       gotohome = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
       J.set$text$x(gotohome, "Home");
-      gotohome.setAttribute(_s1_, 600);
-      gotohome.setAttribute(_s1_0, 715);
+      gotohome.setAttribute(_s1_, "600");
+      gotohome.setAttribute(_s1_0, "715");
       gotohome.setAttribute(_s11_0, "middle");
       gotohome.setAttribute(_s9_, "15");
       gotohome.setAttribute(_s4_0, "Gray");
