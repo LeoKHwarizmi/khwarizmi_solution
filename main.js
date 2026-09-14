@@ -5644,12 +5644,12 @@
       word1_bg.setAttribute("rx", "2");
       word1_bg.setAttribute(_s4_, "PapayaWhip");
       word1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
-      J.set$text$x(word1, "<!DOCTYPE ");
+      J.set$text$x(word1, "import 'dart:");
       word1.setAttribute(_s1_, "33");
       word1.setAttribute(_s1_0, _s2_);
       word1.setAttribute(_s9_0, _s1_1);
       word1_input = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s13_);
-      word1_input.setAttribute(_s1_, "62");
+      word1_input.setAttribute(_s1_, "58");
       word1_input.setAttribute(_s1_0, "25");
       word1_input.setAttribute(_s5_, "17");
       word1_input.setAttribute(_s6_, "7");
@@ -5662,8 +5662,8 @@
       t2.fontSize = "5.5px";
       word1_textbox.id = "word1_input";
       word1_2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
-      J.set$text$x(word1_2, "> ");
-      word1_2.setAttribute(_s1_, "80");
+      J.set$text$x(word1_2, "'");
+      word1_2.setAttribute(_s1_, "75");
       word1_2.setAttribute(_s1_0, _s2_);
       word1_2.setAttribute(_s9_0, _s1_1);
       word1_input.appendChild(word1_textbox).toString;
@@ -9241,7 +9241,7 @@
       type$.MouseEvent._as(__wc0_formal);
       t1 = window;
       t1.toString;
-      B.Window_methods.open$2(t1, "https://stackblitz.com/edit/stackblitz-starters-acd5l6xf?file=index.html", "myWindow");
+      B.Window_methods.open$2(t1, "https://leokhwarizmi.github.io/khwarizmi_solution/sybilstudio.dev/", "myWindow");
     },
     $signature: 0
   };

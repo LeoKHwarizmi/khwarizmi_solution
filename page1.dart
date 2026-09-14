@@ -66,7 +66,8 @@ Element buildPage1() {
   final rect_btn1 = document.createElementNS(svgcdn, 'rect')..setAttribute('x', '6')..setAttribute('y', '218')..setAttribute('width', '12')..setAttribute('height', '12')..setAttribute('rx', '3')..setAttribute('fill', 'CadetBlue')..style.cursor = 'pointer';
   final icon_btn1 = document.createElementNS(svgcdn, 'image')..setAttribute('href', 'code.svg')..setAttribute('x', '8')..setAttribute('y', '220')..setAttribute('width', '8')..setAttribute('height', '8')..style.pointerEvents = 'none';
   btn1..append(rect_btn1)..append(icon_btn1);
-  btn1.onClick.listen((_) {window.open('https://stackblitz.com/edit/stackblitz-starters-acd5l6xf?file=index.html','myWindow');});
+  btn1.onClick.listen((_) {window.open('https://leokhwarizmi.github.io/khwarizmi_solution/sybilstudio.dev/','myWindow');});
+
   btn..append(rectbtn)..append(iconbtn);
 
   svg..append(btn)..append(btn1);

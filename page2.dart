@@ -23,10 +23,10 @@ Element buildPage2() {
   final practice2a = document.createElementNS(svgcdn, 'text')..text = 'd'..setAttribute('x', '20')..setAttribute('y', '20')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
   final practice2a_title = document.createElementNS(svgcdn, 'text')..text = 'How do you debug the code!?'..setAttribute('x', '30')..setAttribute('y', '20')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
   final word1_bg = document.createElementNS(svgcdn, 'rect')..setAttribute('x', '30')..setAttribute('y', '25')..setAttribute('width', '70')..setAttribute('height', '7')..setAttribute('rx', '2')..setAttribute('fill', 'PapayaWhip');
-  final word1 = document.createElementNS(svgcdn, 'text')..text = '<!DOCTYPE '..setAttribute('x', '33')..setAttribute('y', '30')..setAttribute('font-size', '5');
-  final word1_input = document.createElementNS(svgcdn, 'foreignObject')..setAttribute('x', '62')..setAttribute('y', '25')..setAttribute('width', '17')..setAttribute('height', '7');
+  final word1 = document.createElementNS(svgcdn, 'text')..text = "import 'dart:"..setAttribute('x', '33')..setAttribute('y', '30')..setAttribute('font-size', '5');
+  final word1_input = document.createElementNS(svgcdn, 'foreignObject')..setAttribute('x', '58')..setAttribute('y', '25')..setAttribute('width', '17')..setAttribute('height', '7');
   final word1_textbox = InputElement()..style.width = "17px"..style.height = "7px"..style.fontSize = "5.5px"..id = "word1_input";
-  final word1_2 = document.createElementNS(svgcdn, 'text')..text = '> '..setAttribute('x', '80')..setAttribute('y', '30')..setAttribute('font-size', '5');
+  final word1_2 = document.createElementNS(svgcdn, 'text')..text =  "'"..setAttribute('x', '75')..setAttribute('y', '30')..setAttribute('font-size', '5');
   word1_input.append(word1_textbox);
   
 final checkBtn = document.createElementNS(svgcdn, 'foreignObject')
