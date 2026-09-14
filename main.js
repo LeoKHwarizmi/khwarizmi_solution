@@ -4818,15 +4818,20 @@
       about.appendChild(text6).toString;
     },
     createContact() {
-      var contactText, line1, emailLink, emailText, button, circle, text, gotohome, t2, t3, button1, circle1, text1, gotonews,
+      var contactText, line1, societyLink, societyText, line2, emailLink, emailText, button, circle, text, gotohome, t2, t3, button1, circle1, text1, gotonews,
         _s26_ = "http://www.w3.org/2000/svg",
         _s4_ = "text", _s1_ = "x", _s3_ = "600", _s1_0 = "y",
         _s11_ = "text-anchor",
         _s6_ = "middle",
         _s9_ = "font-size",
         _s4_0 = "fill",
+        _s11_0 = "FloralWhite",
+        _s5_ = "tspan",
+        _s10_ = "DodgerBlue",
+        _s15_ = "text-decoration",
+        _s9_0 = "underline",
         _s14_ = "pointer-events",
-        _s10_ = "nav-button",
+        _s10_0 = "nav-button",
         _s7_ = "#ffffff",
         _s12_ = "fill-opacity",
         _s14_0 = "stroke-opacity",
@@ -4839,12 +4844,27 @@
       contactText.setAttribute(_s1_0, "350");
       contactText.setAttribute(_s11_, _s6_);
       contactText.setAttribute(_s9_, "18");
-      contactText.setAttribute(_s4_0, "FloralWhite");
-      line1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "tspan");
-      J.set$text$x(line1, "For support and frequently asked questions (FAQ), please contact me by email at:");
+      contactText.setAttribute(_s4_0, _s11_0);
+      line1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_);
+      J.set$text$x(line1, "For support and frequently asked questions (FAQ), please contact me by email or join our ");
       line1.setAttribute(_s1_, _s3_);
       line1.setAttribute("dy", "0");
+      societyLink = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "a");
+      societyLink.setAttribute("href", "https://discord.gg/znC3MUagHn");
+      societyLink.setAttribute("target", "_blank");
+      societyText = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_);
+      J.set$text$x(societyText, "Society");
+      societyText.setAttribute(_s4_0, _s10_);
+      societyText.setAttribute(_s15_, _s9_0);
+      societyText.setAttribute("cursor", "pointer");
+      societyText.setAttribute(_s14_, "auto");
+      societyLink.appendChild(societyText).toString;
+      line2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_);
+      J.set$text$x(line2, ":");
+      line2.setAttribute(_s4_0, _s11_0);
       contactText.appendChild(line1).toString;
+      contactText.appendChild(societyLink).toString;
+      contactText.appendChild(line2).toString;
       emailLink = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "a");
       emailLink.setAttribute("href", "mailto:omrani.mohammadreze.1993@gmail.com");
       emailLink.setAttribute("target", "_blank");
@@ -4854,14 +4874,14 @@
       emailText.setAttribute(_s1_0, "380");
       emailText.setAttribute(_s11_, _s6_);
       emailText.setAttribute(_s9_, "18");
-      emailText.setAttribute(_s4_0, "DodgerBlue");
-      emailText.setAttribute("text-decoration", "underline");
+      emailText.setAttribute(_s4_0, _s10_);
+      emailText.setAttribute(_s15_, _s9_0);
       emailText.setAttribute(_s14_, "auto");
       emailText.setAttribute("cursor", "pointer");
       emailLink.appendChild(emailText).toString;
       button = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
       button.setAttribute("id", "button-up");
-      button.setAttribute("class", _s10_);
+      button.setAttribute("class", _s10_0);
       circle = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "circle");
       circle.setAttribute("cx", _s3_);
       circle.setAttribute("cy", "50");
@@ -4880,8 +4900,8 @@
       text.setAttribute(_s14_, _s4_1);
       gotohome = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
       J.set$text$x(gotohome, "Home");
-      gotohome.setAttribute(_s1_, 600);
-      gotohome.setAttribute(_s1_0, 90);
+      gotohome.setAttribute(_s1_, _s3_);
+      gotohome.setAttribute(_s1_0, "90");
       gotohome.setAttribute(_s11_, _s6_);
       gotohome.setAttribute(_s9_, "15");
       gotohome.setAttribute(_s4_0, "Gray");
@@ -4894,7 +4914,7 @@
       button.appendChild(gotohome).toString;
       button1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
       button1.setAttribute("id", "button-left");
-      button1.setAttribute("class", _s10_);
+      button1.setAttribute("class", _s10_0);
       circle1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "circle");
       circle1.setAttribute("cx", _s3_);
       circle1.setAttribute("cy", "750");
@@ -4913,8 +4933,8 @@
       text1.setAttribute(_s14_, _s4_1);
       gotonews = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_);
       J.set$text$x(gotonews, "Newsletter");
-      gotonews.setAttribute(_s1_, 600);
-      gotonews.setAttribute(_s1_0, 715);
+      gotonews.setAttribute(_s1_, _s3_);
+      gotonews.setAttribute(_s1_0, "715");
       gotonews.setAttribute(_s11_, _s6_);
       gotonews.setAttribute(_s9_, "15");
       gotonews.setAttribute(_s4_0, "Gray");
@@ -4961,7 +4981,7 @@
       line1.setAttribute("dy", "0");
       newsletterText.appendChild(line1).toString;
       discordLink = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "a");
-      discordLink.setAttribute(_s4_2, "https://discord.com/");
+      discordLink.setAttribute(_s4_2, "https://discord.gg/znC3MUagHn");
       discordLink.setAttribute(_s6_0, _s6_1);
       discordLink.setAttribute(_s14_, _s3_0);
       discordLink.setAttribute(_s6_2, _s7_);
@@ -4976,7 +4996,7 @@
       discordText.setAttribute(_s14_, _s3_0);
       discordLink.appendChild(discordText).toString;
       facebookLink = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "a");
-      facebookLink.setAttribute(_s4_2, "https://www.facebook.com/");
+      facebookLink.setAttribute(_s4_2, "https://www.facebook.com/OmraniResearchIndustries/");
       facebookLink.setAttribute(_s6_0, _s6_1);
       facebookLink.setAttribute(_s14_, _s3_0);
       facebookLink.setAttribute(_s6_2, _s7_);
@@ -4991,7 +5011,7 @@
       facebookText.setAttribute(_s14_, _s3_0);
       facebookLink.appendChild(facebookText).toString;
       xLink = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "a");
-      xLink.setAttribute(_s4_2, "https://x.com/");
+      xLink.setAttribute(_s4_2, "https://x.com/LeoKHwarizmi");
       xLink.setAttribute(_s6_0, _s6_1);
       xLink.setAttribute(_s14_, _s3_0);
       xLink.setAttribute(_s6_2, _s7_);
@@ -5006,7 +5026,7 @@
       xText.setAttribute(_s14_, _s3_0);
       xLink.appendChild(xText).toString;
       linkedinLink = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "a");
-      linkedinLink.setAttribute(_s4_2, "https://www.linkedin.com/");
+      linkedinLink.setAttribute(_s4_2, "https://linkedin.com/company/omrani-research-industries");
       linkedinLink.setAttribute(_s6_0, _s6_1);
       linkedinLink.setAttribute(_s14_, _s3_0);
       linkedinLink.setAttribute(_s6_2, _s7_);

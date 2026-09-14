@@ -1192,13 +1192,45 @@ void createContact() {
     ..setAttribute('font-size', '18')
     ..setAttribute('fill', 'FloralWhite');
 
+  // First part of the sentence
   final line1 = document.createElementNS(svgcdn, 'tspan')
-    ..text = 'For support and frequently asked questions (FAQ), please contact me by email at:'
+    ..text =
+        'For support and frequently asked questions (FAQ), please contact me by email or join our '
     ..setAttribute('x', '600')
     ..setAttribute('dy', '0');
 
+  // -------------------------
+  // SOCIETY LINK
+  // -------------------------
+
+  final societyLink = document.createElementNS(svgcdn, 'a')
+    ..setAttribute(
+      'href',
+      'https://discord.gg/znC3MUagHn',
+    )
+    ..setAttribute(
+      'target',
+      '_blank',
+    );
+
+  final societyText = document.createElementNS(svgcdn, 'tspan')
+    ..text = 'Society'
+    ..setAttribute('fill', 'DodgerBlue')
+    ..setAttribute('text-decoration', 'underline')
+    ..setAttribute('cursor', 'pointer')
+    ..setAttribute('pointer-events', 'auto');
+
+  societyLink.append(societyText);
+
+  // Colon after Society
+  final line2 = document.createElementNS(svgcdn, 'tspan')
+    ..text = ':'
+    ..setAttribute('fill', 'FloralWhite');
+
   contactText
-    ..append(line1);
+    ..append(line1)
+    ..append(societyLink)
+    ..append(line2);
 
 
   // -------------------------
@@ -1255,13 +1287,14 @@ void createContact() {
     ..setAttribute('fill', 'white')
     ..setAttribute('pointer-events', 'none');
 
-  final gotohome = document.createElementNS(svgcdn,'text',)..text = 'Home'
-  ..setAttribute('x', 1200 / 2)
-  ..setAttribute('y', 90)
-  ..setAttribute('text-anchor','middle',)
-  ..setAttribute('font-size','15',)
-  ..setAttribute('fill','Gray',)
-  ..setAttribute('pointer-events','none',);
+  final gotohome = document.createElementNS(svgcdn, 'text')
+    ..text = 'Home'
+    ..setAttribute('x', '600')
+    ..setAttribute('y', '90')
+    ..setAttribute('text-anchor', 'middle')
+    ..setAttribute('font-size', '15')
+    ..setAttribute('fill', 'Gray')
+    ..setAttribute('pointer-events', 'none');
 
   button.onClick.listen((event) {
     fromContactGoToHome();
@@ -1269,7 +1302,8 @@ void createContact() {
 
   button
     ..append(circle)
-    ..append(text)..append(gotohome);
+    ..append(text)
+    ..append(gotohome);
 
 
   // -------------------------
@@ -1298,13 +1332,14 @@ void createContact() {
     ..setAttribute('fill', 'white')
     ..setAttribute('pointer-events', 'none');
 
-  final gotonews = document.createElementNS(svgcdn,'text',)..text = 'Newsletter'
-  ..setAttribute('x', 1200 / 2)
-  ..setAttribute('y', 800 - 85)
-  ..setAttribute('text-anchor','middle',)
-  ..setAttribute('font-size','15',)
-  ..setAttribute('fill','Gray',)
-  ..setAttribute('pointer-events','none',);
+  final gotonews = document.createElementNS(svgcdn, 'text')
+    ..text = 'Newsletter'
+    ..setAttribute('x', '600')
+    ..setAttribute('y', '715')
+    ..setAttribute('text-anchor', 'middle')
+    ..setAttribute('font-size', '15')
+    ..setAttribute('fill', 'Gray')
+    ..setAttribute('pointer-events', 'none');
 
   button1.onClick.listen((event) {
     fromContactGoToFooter();
@@ -1312,7 +1347,8 @@ void createContact() {
 
   button1
     ..append(circle1)
-    ..append(text1)..append(gotonews);
+    ..append(text1)
+    ..append(gotonews);
 
 
   // -------------------------
@@ -1325,6 +1361,10 @@ void createContact() {
     ..append(button)
     ..append(button1);
 }
+
+
+
+
 
 void createFooter() {
   final footer = createPage('footer', 0, 2);
@@ -1354,7 +1394,7 @@ void createFooter() {
   // -------------------------
 
   final discordLink = document.createElementNS(svgcdn, 'a')
-    ..setAttribute('href', 'https://discord.com/')
+    ..setAttribute('href', 'https://discord.gg/znC3MUagHn')
     ..setAttribute('target', '_blank')
     ..setAttribute('pointer-events', 'all')
     ..setAttribute('cursor', 'pointer');
@@ -1376,7 +1416,7 @@ void createFooter() {
   // -------------------------
 
   final facebookLink = document.createElementNS(svgcdn, 'a')
-    ..setAttribute('href', 'https://www.facebook.com/')
+    ..setAttribute('href', 'https://www.facebook.com/OmraniResearchIndustries/')
     ..setAttribute('target', '_blank')
     ..setAttribute('pointer-events', 'all')
     ..setAttribute('cursor', 'pointer');
@@ -1398,7 +1438,7 @@ void createFooter() {
   // -------------------------
 
   final xLink = document.createElementNS(svgcdn, 'a')
-    ..setAttribute('href', 'https://x.com/')
+    ..setAttribute('href', 'https://x.com/LeoKHwarizmi')
     ..setAttribute('target', '_blank')
     ..setAttribute('pointer-events', 'all')
     ..setAttribute('cursor', 'pointer');
@@ -1420,7 +1460,7 @@ void createFooter() {
   // -------------------------
 
   final linkedinLink = document.createElementNS(svgcdn, 'a')
-    ..setAttribute('href', 'https://www.linkedin.com/')
+    ..setAttribute('href', 'https://linkedin.com/company/omrani-research-industries')
     ..setAttribute('target', '_blank')
     ..setAttribute('pointer-events', 'all')
     ..setAttribute('cursor', 'pointer');
