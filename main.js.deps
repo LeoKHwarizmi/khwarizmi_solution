@@ -3,9 +3,15 @@ file:///home/linux/dart-sdk/lib/libraries.json
 file:///home/linux/tut/p40/action.dart
 file:///home/linux/tut/p40/main.dart
 file:///home/linux/tut/p40/page1.dart
+file:///home/linux/tut/p40/page10.dart
 file:///home/linux/tut/p40/page2.dart
 file:///home/linux/tut/p40/page3.dart
 file:///home/linux/tut/p40/page4.dart
+file:///home/linux/tut/p40/page5.dart
+file:///home/linux/tut/p40/page6.dart
+file:///home/linux/tut/p40/page7.dart
+file:///home/linux/tut/p40/page8.dart
+file:///home/linux/tut/p40/page9.dart
 file:///home/linux/tut/p40/style.dart
 org-dartlang-sdk:///lib/_http/crypto.dart
 org-dartlang-sdk:///lib/_http/embedder_config.dart

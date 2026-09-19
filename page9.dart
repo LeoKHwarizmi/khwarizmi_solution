@@ -1,6 +1,6 @@
 import 'dart:html';
 
-Element buildPage3() {
+Element buildPage9() {
   const svgcdn = 'http://www.w3.org/2000/svg';
 
   final sec = Element.tag('section')..classes.addAll(['section']);
@@ -9,9 +9,9 @@ Element buildPage3() {
   // header
   final course_banner = document.createElementNS(svgcdn, 'polygon')..setAttribute('points', '0,0 210,0 210,60 0,70')..setAttribute('fill', 'CadetBlue');
   final course_number_circle = document.createElementNS(svgcdn, 'circle')..setAttribute('cx', '200')..setAttribute('cy', '10')..setAttribute('r', '35')..setAttribute('fill', 'white');
-  final course_number = document.createElementNS(svgcdn, 'text')..text = '02'..setAttribute('x', '175')..setAttribute('y', '30')..setAttribute('font-size', '30')..setAttribute('font-weight', '1000')..setAttribute('font-family', 'Impact')..setAttribute('fill', 'CadetBlue');
-  final course_title = document.createElementNS(svgcdn, 'text')..text = '.Tag'..setAttribute('x', '15')..setAttribute('y', '20')..setAttribute('font-size', '10')..setAttribute('font-weight', '800')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'RoyalBlue');
-  final course_subtitle = document.createElementNS(svgcdn, 'text')..text = 'void main'..setAttribute('x', '38')..setAttribute('y', '30')..setAttribute('font-size', '10')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'white');
+  final course_number = document.createElementNS(svgcdn, 'text')..text = '05'..setAttribute('x', '175')..setAttribute('y', '30')..setAttribute('font-size', '30')..setAttribute('font-weight', '1000')..setAttribute('font-family', 'Impact')..setAttribute('fill', 'CadetBlue');
+  final course_title = document.createElementNS(svgcdn, 'text')..text = '.head'..setAttribute('x', '15')..setAttribute('y', '20')..setAttribute('font-size', '10')..setAttribute('font-weight', '800')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'RoyalBlue');
+  final course_subtitle = document.createElementNS(svgcdn, 'text')..text = 'Favicon'..setAttribute('x', '38')..setAttribute('y', '30')..setAttribute('font-size', '10')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'white');
   final defs = document.createElementNS(svgcdn, 'defs');
   final clipPath = document.createElementNS(svgcdn, 'clipPath')..setAttribute('id', 'roundedImage');
   final roundedRect = document.createElementNS(svgcdn, 'rect')..setAttribute('x', '20')..setAttribute('y', '40')..setAttribute('width', '170')..setAttribute('height', '60')..setAttribute('rx', '5')..setAttribute('ry', '5');
@@ -39,13 +39,13 @@ Element buildPage3() {
 
   final practice2a = document.createElementNS(svgcdn, 'text')..text = 'b'..setAttribute('x', '20')..setAttribute('y', '155')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
   final practice2a_title = document.createElementNS(svgcdn, 'text')..text = 'How to define it?'..setAttribute('x', '30')..setAttribute('y', '155')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
-  final practice2a_wort1 = document.createElementNS(svgcdn, 'text')..text = 'Tag'..setAttribute('x', '30')..setAttribute('y', '163')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
+  final practice2a_wort1 = document.createElementNS(svgcdn, 'text')..text = 'head'..setAttribute('x', '30')..setAttribute('y', '163')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
   final practice2a_line1 = document.createElementNS(svgcdn, 'rect')..setAttribute('x', '30')..setAttribute('y', '167')..setAttribute('width', '1')..setAttribute('height', '10')..setAttribute('fill', 'SteelBlue');
-  final practice2a_description1 = document.createElementNS(svgcdn, 'text')..text = 'A code that define how a web browser must format and display contents'..setAttribute('x', '35')..setAttribute('y', '173')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'SteelBlue');
+  final practice2a_description1 = document.createElementNS(svgcdn, 'text')..text = 'this element is a container for metadata (data about data).'..setAttribute('x', '35')..setAttribute('y', '173')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'SteelBlue');
   
-  final practice2a_wort2 = document.createElementNS(svgcdn, 'text')..text = 'void main'..setAttribute('x', '30')..setAttribute('y', '188')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
+  final practice2a_wort2 = document.createElementNS(svgcdn, 'text')..text = 'Favicon'..setAttribute('x', '30')..setAttribute('y', '188')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
   final practice2a_line2 = document.createElementNS(svgcdn, 'rect')..setAttribute('x', '30')..setAttribute('y', '192')..setAttribute('width', '1')..setAttribute('height', '10')..setAttribute('fill', 'SteelBlue');
-  final practice2a_description2 = document.createElementNS(svgcdn, 'text')..text = 'This will tells Dart where your program starts.'..setAttribute('x', '35')..setAttribute('y', '198')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'SteelBlue');
+  final practice2a_description2 = document.createElementNS(svgcdn, 'text')..text = 'A favicon is a small image displayed next to the page title in the browser tab.'..setAttribute('x', '35')..setAttribute('y', '198')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'SteelBlue');
 
   final practice3a = document.createElementNS(svgcdn, 'text')..text = 'c'..setAttribute('x', '20')..setAttribute('y', '222')..setAttribute('font-size', '5')..setAttribute('font-weight', '900')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'green');
   final practice3a_title = document.createElementNS(svgcdn, 'text')..text = 'How you code it?'..setAttribute('x', '30')..setAttribute('y', '222')..setAttribute('font-size', '5')..setAttribute('font-family', 'Times New Roman')..setAttribute('fill', 'black');
@@ -124,7 +124,7 @@ void showOnboarding() {
     ..cursor = "pointer";
   // YouTube video
   final video = IFrameElement()
-  ..src = "https://www.youtube.com/embed/H9VpO0rIgcw?si=wyI_hyIFB4ZcCks_"
+  ..src = "https://www.youtube.com/embed/JLOuKZth4HU?si=y9GknYY_8sMeMcQY"
     ..width = "100%"
     ..height = "100%"
     ..style.border = "none"
@@ -139,18 +139,3 @@ void showOnboarding() {
   overlay.append(dialog);
   body.append(overlay);
 }
-
-
-/*
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>Eliott — Freelance UI/UX Designer & Frontend Dev</title>
-<link rel="icon" type="image/x-icon" href="code.svg">
-</head>
-</html>
-<body></body>
-</html>
-
-*/

@@ -4,6 +4,22 @@ import 'page1.dart';
 import 'page2.dart';
 import 'page3.dart';
 import 'page4.dart';
+import 'page5.dart';
+import 'page6.dart';
+import 'page7.dart';
+import 'page8.dart';
+import 'page9.dart';
+import 'page10.dart';
+// import 'page11.dart';
+// import 'page12.dart';
+// import 'page13.dart';
+// import 'page14.dart';
+// import 'page15.dart';
+// import 'page16.dart';
+// import 'page17.dart';
+// import 'page18.dart';
+// import 'page19.dart';
+// import 'page20.dart';
 import 'style.dart';
 import 'action.dart';
 
@@ -39,12 +55,24 @@ final page1 = buildPage1();
 final page2 = buildPage2();
 final page3 = buildPage3();
 final page4 = buildPage4();
+final page5 = buildPage5();
+final page6 = buildPage6();
+final page7 = buildPage7();
+final page8 = buildPage8();
+final page9 = buildPage9();
+final page10 = buildPage10();
 
 // If buildPage2 crashes, at least page1 still shows:
 document.body!..append(page1)
 ..append(Element.tag('br'))..append(page2)
 ..append(Element.tag('br'))..append(page3)
-..append(Element.tag('br'))..append(page4);
+..append(Element.tag('br'))..append(page4)
+..append(Element.tag('br'))..append(page5)
+..append(Element.tag('br'))..append(page6)
+..append(Element.tag('br'))..append(page7)
+..append(Element.tag('br'))..append(page8)
+..append(Element.tag('br'))..append(page9)
+..append(Element.tag('br'))..append(page10);
 
   // Change URL from /html.html to /
   window.history.replaceState(null, '', '/khwarizmi_solution/');
