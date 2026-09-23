@@ -4098,7 +4098,7 @@
       this.paragraph = t0;
     },
     main() {
-      var favicon, page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, t2, t3, navSvg, button, circle, text, gototutorial, _null = null, _s2_ = "br",
+      var favicon, page1, page2, page3, page4, page5, page6, page7, page8, page9, page10, page11, page12, t2, t3, navSvg, button, circle, text, gototutorial, _null = null, _s2_ = "br",
         _s26_ = "http://www.w3.org/2000/svg",
         _s4_ = "100%", _s4_0 = "none",
         _s14_ = "pointer-events",
@@ -4125,6 +4125,8 @@
         page8 = A.buildPage8();
         page9 = A.buildPage9();
         page10 = A.buildPage10();
+        page11 = A.buildPage11();
+        page12 = A.buildPage12();
         t2 = t1.body;
         t2.appendChild(page1).toString;
         t3 = type$.Element;
@@ -4146,6 +4148,10 @@
         t2.appendChild(page9).toString;
         t2.appendChild(t3._as(A._ElementFactoryProvider_createElement_tag(_s2_, _null))).toString;
         t2.appendChild(page10).toString;
+        t2.appendChild(t3._as(A._ElementFactoryProvider_createElement_tag(_s2_, _null))).toString;
+        t2.appendChild(page11).toString;
+        t2.appendChild(t3._as(A._ElementFactoryProvider_createElement_tag(_s2_, _null))).toString;
+        t2.appendChild(page12).toString;
         t2 = window.history;
         t2.toString;
         t2.replaceState(new A._StructuredCloneDart2Js([], []).walk$1(_null), "", "/khwarizmi_solution/");
@@ -5539,7 +5545,7 @@
       A._EventStreamSubscription$(t2._target, t2._eventType, t1._eval$1("~(1)?")._as(new A.buildPage1_closure0()), false, t1._precomputed1);
       return sec;
     },
-    showOnboarding3() {
+    showOnboarding4() {
       var overlay, t3, dialog, t4, _s4_ = "100%",
         _s13_ = "border-radius",
         t1 = document,
@@ -5590,7 +5596,7 @@
       t4.border = "none";
       B.IFrameElement_methods.set$allowFullscreen(t1, true);
       t4 = type$._ElementEventStreamImpl_MouseEvent;
-      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure3(overlay)), false, t4._precomputed1);
+      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure4(overlay)), false, t4._precomputed1);
       dialog.appendChild(t1).toString;
       dialog.appendChild(t3).toString;
       overlay.appendChild(dialog).toString;
@@ -5600,7 +5606,7 @@
     },
     buildPage1_closure0: function buildPage1_closure0() {
     },
-    showOnboarding_closure3: function showOnboarding_closure3(t0) {
+    showOnboarding_closure4: function showOnboarding_closure4(t0) {
       this.overlay = t0;
     },
     buildPage10() {
@@ -5853,6 +5859,699 @@
     buildPage10_closure: function buildPage10_closure() {
     },
     buildPage10__closure: function buildPage10__closure() {
+    },
+    buildPage11() {
+      var t1, svg, course_banner, course_number_circle, course_number, course_title, course_subtitle, defs, clipPath, roundedRect, course_image, sidenumber, footer_title, hr1, footer_content, hr2, practice1, practice1_title, practice1a, practice1a_title, practice1a_description, practice2a, practice2a_title, practice2a_wort1, practice2a_line1, practice2a_description1, practice2a_wort2, practice2a_line2, practice2a_description2, practice3a, practice3a_title, practice3a_description, btn, rectbtn, iconbtn, t2, btn1, rect_btn1, icon_btn1,
+        _s26_ = "http://www.w3.org/2000/svg",
+        _s5_ = "width", _s6_ = "height", _s4_ = "fill",
+        _s9_ = "CadetBlue",
+        _s2_ = "10", _s2_0 = "35", _s4_0 = "text", _s1_ = "x", _s1_0 = "y", _s2_1 = "30",
+        _s9_0 = "font-size",
+        _s11_ = "font-weight",
+        _s11_0 = "font-family",
+        _s2_2 = "20",
+        _s15_ = "Times New Roman",
+        _s8_ = "Headings",
+        _s3_ = "900", _s4_1 = "rect", _s1_1 = "5", _s5_0 = "image", _s4_2 = "href",
+        _s9_1 = "transform",
+        _s5_1 = "black", _s5_2 = "green",
+        _s12_ = "stroke-width",
+        _s49_ = string$.Watch_,
+        _s9_2 = "SteelBlue",
+        _s2_3 = "12",
+        _s14_ = "pointer-events",
+        sec = type$.Element._as(A._ElementFactoryProvider_createElement_tag("section", null));
+      J.get$classes$x(sec).addAll$1(0, A._setArrayType(["section"], type$.JSArray_String));
+      t1 = document;
+      t1.toString;
+      svg = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "svg");
+      svg.setAttribute(_s5_, "210mm");
+      svg.setAttribute(_s6_, "297mm");
+      svg.setAttribute("viewBox", "0 0 210 297");
+      course_banner = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "polygon");
+      course_banner.setAttribute("points", "0,0 210,0 210,60 0,70");
+      course_banner.setAttribute(_s4_, _s9_);
+      course_number_circle = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "circle");
+      course_number_circle.setAttribute("cx", "200");
+      course_number_circle.setAttribute("cy", _s2_);
+      course_number_circle.setAttribute("r", _s2_0);
+      course_number_circle.setAttribute(_s4_, "white");
+      course_number = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(course_number, "06");
+      course_number.setAttribute(_s1_, "175");
+      course_number.setAttribute(_s1_0, _s2_1);
+      course_number.setAttribute(_s9_0, _s2_1);
+      course_number.setAttribute(_s11_, "1000");
+      course_number.setAttribute(_s11_0, "Impact");
+      course_number.setAttribute(_s4_, _s9_);
+      course_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(course_title, ".body");
+      course_title.setAttribute(_s1_, "15");
+      course_title.setAttribute(_s1_0, _s2_2);
+      course_title.setAttribute(_s9_0, _s2_);
+      course_title.setAttribute(_s11_, "800");
+      course_title.setAttribute(_s11_0, _s15_);
+      course_title.setAttribute(_s4_, "RoyalBlue");
+      course_subtitle = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(course_subtitle, _s8_);
+      course_subtitle.setAttribute(_s1_, "38");
+      course_subtitle.setAttribute(_s1_0, _s2_1);
+      course_subtitle.setAttribute(_s9_0, _s2_);
+      course_subtitle.setAttribute(_s11_, _s3_);
+      course_subtitle.setAttribute(_s11_0, _s15_);
+      course_subtitle.setAttribute(_s4_, "white");
+      defs = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "defs");
+      clipPath = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "clipPath");
+      clipPath.setAttribute("id", "roundedImage");
+      roundedRect = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_1);
+      roundedRect.setAttribute(_s1_, _s2_2);
+      roundedRect.setAttribute(_s1_0, "40");
+      roundedRect.setAttribute(_s5_, "170");
+      roundedRect.setAttribute(_s6_, "60");
+      roundedRect.setAttribute("rx", _s1_1);
+      roundedRect.setAttribute("ry", _s1_1);
+      clipPath.appendChild(roundedRect).toString;
+      defs.appendChild(clipPath).toString;
+      course_image = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      course_image.setAttribute(_s4_2, "lessen1.jpg");
+      course_image.setAttribute(_s1_, _s2_2);
+      course_image.setAttribute(_s1_0, "40");
+      course_image.setAttribute(_s5_, "170");
+      course_image.setAttribute(_s6_, "60");
+      course_image.setAttribute("preserveAspectRatio", "xMidYMid slice");
+      course_image.setAttribute("clip-path", "url(#roundedImage)");
+      course_image.setAttribute(_s9_1, "rotate(3 90 85)");
+      sidenumber = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(sidenumber, "01\xa0\xa0|\xa0\xa0One");
+      sidenumber.setAttribute(_s9_0, _s1_1);
+      sidenumber.setAttribute(_s4_, _s5_1);
+      sidenumber.setAttribute(_s1_, "200");
+      sidenumber.setAttribute(_s1_0, "245");
+      sidenumber.setAttribute(_s9_1, "rotate(-90 195 245)");
+      svg.appendChild(defs).toString;
+      svg.appendChild(course_banner).toString;
+      svg.appendChild(course_number_circle).toString;
+      svg.appendChild(course_number).toString;
+      svg.appendChild(course_title).toString;
+      svg.appendChild(course_subtitle).toString;
+      svg.appendChild(sidenumber).toString;
+      svg.appendChild(course_image).toString;
+      footer_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(footer_title, "Learn Goal");
+      footer_title.setAttribute(_s1_, "95");
+      footer_title.setAttribute(_s1_0, "273");
+      footer_title.setAttribute(_s9_0, "4");
+      footer_title.setAttribute(_s11_, "500");
+      footer_title.setAttribute(_s11_0, _s15_);
+      footer_title.setAttribute(_s4_, _s5_2);
+      hr1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "line");
+      hr1.setAttribute("x1", _s2_1);
+      hr1.setAttribute("y1", "275");
+      hr1.setAttribute("x2", "180");
+      hr1.setAttribute("y2", "275");
+      hr1.setAttribute("stroke", _s5_2);
+      hr1.setAttribute(_s12_, "0.5");
+      footer_content = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(footer_content, "Basic Tags: void main");
+      footer_content.setAttribute(_s1_, _s2_0);
+      footer_content.setAttribute(_s1_0, "281");
+      footer_content.setAttribute(_s9_0, "4");
+      footer_content.setAttribute(_s11_, "500");
+      footer_content.setAttribute(_s11_0, _s15_);
+      footer_content.setAttribute(_s4_, _s5_2);
+      hr2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "line");
+      hr2.setAttribute("x1", _s2_1);
+      hr2.setAttribute("y1", "285");
+      hr2.setAttribute("x2", "180");
+      hr2.setAttribute("y2", "285");
+      hr2.setAttribute("stroke", _s5_2);
+      hr2.setAttribute(_s12_, "0.5");
+      svg.appendChild(footer_title).toString;
+      svg.appendChild(hr1).toString;
+      svg.appendChild(footer_content).toString;
+      svg.appendChild(hr2).toString;
+      practice1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice1, "1");
+      practice1.setAttribute(_s1_, _s2_2);
+      practice1.setAttribute(_s1_0, "115");
+      practice1.setAttribute(_s9_0, _s1_1);
+      practice1.setAttribute(_s11_, _s3_);
+      practice1.setAttribute(_s11_0, _s15_);
+      practice1.setAttribute(_s4_, _s5_2);
+      practice1_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice1_title, "Speak With Me!");
+      practice1_title.setAttribute(_s1_, _s2_1);
+      practice1_title.setAttribute(_s1_0, "115");
+      practice1_title.setAttribute(_s9_0, _s1_1);
+      practice1_title.setAttribute(_s11_, _s3_);
+      practice1_title.setAttribute(_s11_0, _s15_);
+      practice1_title.setAttribute(_s4_, _s5_1);
+      practice1a = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice1a, "a");
+      practice1a.setAttribute(_s1_, _s2_2);
+      practice1a.setAttribute(_s1_0, "123");
+      practice1a.setAttribute(_s9_0, _s1_1);
+      practice1a.setAttribute(_s11_, _s3_);
+      practice1a.setAttribute(_s11_0, _s15_);
+      practice1a.setAttribute(_s4_, _s5_2);
+      practice1a_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice1a_title, "How to code it?");
+      practice1a_title.setAttribute(_s1_, _s2_1);
+      practice1a_title.setAttribute(_s1_0, "123");
+      practice1a_title.setAttribute(_s9_0, _s1_1);
+      practice1a_title.setAttribute(_s11_0, _s15_);
+      practice1a_title.setAttribute(_s4_, _s5_1);
+      practice1a_description = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice1a_description, _s49_);
+      practice1a_description.setAttribute(_s1_, _s2_1);
+      practice1a_description.setAttribute(_s1_0, "131");
+      practice1a_description.setAttribute(_s9_0, _s1_1);
+      practice1a_description.setAttribute(_s11_0, _s15_);
+      practice1a_description.setAttribute(_s4_, _s5_1);
+      practice2a = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice2a, "b");
+      practice2a.setAttribute(_s1_, _s2_2);
+      practice2a.setAttribute(_s1_0, "155");
+      practice2a.setAttribute(_s9_0, _s1_1);
+      practice2a.setAttribute(_s11_, _s3_);
+      practice2a.setAttribute(_s11_0, _s15_);
+      practice2a.setAttribute(_s4_, _s5_2);
+      practice2a_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice2a_title, "How to define it?");
+      practice2a_title.setAttribute(_s1_, _s2_1);
+      practice2a_title.setAttribute(_s1_0, "155");
+      practice2a_title.setAttribute(_s9_0, _s1_1);
+      practice2a_title.setAttribute(_s11_0, _s15_);
+      practice2a_title.setAttribute(_s4_, _s5_1);
+      practice2a_wort1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice2a_wort1, "body");
+      practice2a_wort1.setAttribute(_s1_, _s2_1);
+      practice2a_wort1.setAttribute(_s1_0, "163");
+      practice2a_wort1.setAttribute(_s9_0, _s1_1);
+      practice2a_wort1.setAttribute(_s11_, _s3_);
+      practice2a_wort1.setAttribute(_s11_0, _s15_);
+      practice2a_wort1.setAttribute(_s4_, _s5_1);
+      practice2a_line1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_1);
+      practice2a_line1.setAttribute(_s1_, _s2_1);
+      practice2a_line1.setAttribute(_s1_0, "167");
+      practice2a_line1.setAttribute(_s5_, "1");
+      practice2a_line1.setAttribute(_s6_, _s2_);
+      practice2a_line1.setAttribute(_s4_, _s9_2);
+      practice2a_description1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice2a_description1, "The visible part of the HTML document.");
+      practice2a_description1.setAttribute(_s1_, _s2_0);
+      practice2a_description1.setAttribute(_s1_0, "173");
+      practice2a_description1.setAttribute(_s9_0, _s1_1);
+      practice2a_description1.setAttribute(_s11_0, _s15_);
+      practice2a_description1.setAttribute(_s4_, _s9_2);
+      practice2a_wort2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice2a_wort2, _s8_);
+      practice2a_wort2.setAttribute(_s1_, _s2_1);
+      practice2a_wort2.setAttribute(_s1_0, "188");
+      practice2a_wort2.setAttribute(_s9_0, _s1_1);
+      practice2a_wort2.setAttribute(_s11_, _s3_);
+      practice2a_wort2.setAttribute(_s11_0, _s15_);
+      practice2a_wort2.setAttribute(_s4_, _s5_1);
+      practice2a_line2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_1);
+      practice2a_line2.setAttribute(_s1_, _s2_1);
+      practice2a_line2.setAttribute(_s1_0, "192");
+      practice2a_line2.setAttribute(_s5_, "1");
+      practice2a_line2.setAttribute(_s6_, _s2_);
+      practice2a_line2.setAttribute(_s4_, _s9_2);
+      practice2a_description2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice2a_description2, "are titles or subtitles that you want to display on a webpage.");
+      practice2a_description2.setAttribute(_s1_, _s2_0);
+      practice2a_description2.setAttribute(_s1_0, "198");
+      practice2a_description2.setAttribute(_s9_0, _s1_1);
+      practice2a_description2.setAttribute(_s11_0, _s15_);
+      practice2a_description2.setAttribute(_s4_, _s9_2);
+      practice3a = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice3a, "c");
+      practice3a.setAttribute(_s1_, _s2_2);
+      practice3a.setAttribute(_s1_0, "222");
+      practice3a.setAttribute(_s9_0, _s1_1);
+      practice3a.setAttribute(_s11_, _s3_);
+      practice3a.setAttribute(_s11_0, _s15_);
+      practice3a.setAttribute(_s4_, _s5_2);
+      practice3a_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice3a_title, "How you code it?");
+      practice3a_title.setAttribute(_s1_, _s2_1);
+      practice3a_title.setAttribute(_s1_0, "222");
+      practice3a_title.setAttribute(_s9_0, _s1_1);
+      practice3a_title.setAttribute(_s11_0, _s15_);
+      practice3a_title.setAttribute(_s4_, _s5_1);
+      practice3a_description = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice3a_description, _s49_);
+      practice3a_description.setAttribute(_s1_, _s2_1);
+      practice3a_description.setAttribute(_s1_0, "230");
+      practice3a_description.setAttribute(_s9_0, _s1_1);
+      practice3a_description.setAttribute(_s11_0, _s15_);
+      practice3a_description.setAttribute(_s4_, _s5_1);
+      svg.appendChild(defs).toString;
+      svg.appendChild(practice1).toString;
+      svg.appendChild(practice1_title).toString;
+      svg.appendChild(practice1a).toString;
+      svg.appendChild(practice1a_title).toString;
+      svg.appendChild(practice1a_description).toString;
+      svg.appendChild(practice2a).toString;
+      svg.appendChild(practice2a_title).toString;
+      svg.appendChild(practice2a_wort1).toString;
+      svg.appendChild(practice2a_line1).toString;
+      svg.appendChild(practice2a_description1).toString;
+      svg.appendChild(practice2a_wort2).toString;
+      svg.appendChild(practice2a_line2).toString;
+      svg.appendChild(practice2a_description2).toString;
+      svg.appendChild(practice3a).toString;
+      svg.appendChild(practice3a_title).toString;
+      svg.appendChild(practice3a_description).toString;
+      btn = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
+      rectbtn = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_1);
+      rectbtn.setAttribute(_s1_, _s1_1);
+      rectbtn.setAttribute(_s1_0, "111");
+      rectbtn.setAttribute(_s5_, _s2_3);
+      rectbtn.setAttribute(_s6_, _s2_3);
+      rectbtn.setAttribute("rx", "3");
+      rectbtn.setAttribute(_s4_, _s9_);
+      practice2a_wort2 = rectbtn.style;
+      practice2a_wort2.cursor = "pointer";
+      iconbtn = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      iconbtn.setAttribute(_s4_2, "youtube.svg");
+      iconbtn.setAttribute(_s1_, "7");
+      iconbtn.setAttribute(_s1_0, "113");
+      iconbtn.setAttribute(_s5_, "8");
+      iconbtn.setAttribute(_s6_, "8");
+      t2 = iconbtn.style;
+      t2.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t2, B.CssStyleDeclaration_methods._browserPropertyName$1(t2, _s14_), "none", "");
+      btn1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "g");
+      rect_btn1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_1);
+      rect_btn1.setAttribute(_s1_, "6");
+      rect_btn1.setAttribute(_s1_0, "218");
+      rect_btn1.setAttribute(_s5_, _s2_3);
+      rect_btn1.setAttribute(_s6_, _s2_3);
+      rect_btn1.setAttribute("rx", "3");
+      rect_btn1.setAttribute(_s4_, _s9_);
+      t2 = rect_btn1.style;
+      t2.cursor = "pointer";
+      icon_btn1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s5_0);
+      icon_btn1.setAttribute(_s4_2, "code.svg");
+      icon_btn1.setAttribute(_s1_, "8");
+      icon_btn1.setAttribute(_s1_0, "220");
+      icon_btn1.setAttribute(_s5_, "8");
+      icon_btn1.setAttribute(_s6_, "8");
+      t1 = icon_btn1.style;
+      t1.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t1, B.CssStyleDeclaration_methods._browserPropertyName$1(t1, _s14_), "none", "");
+      btn1.appendChild(rect_btn1).toString;
+      btn1.appendChild(icon_btn1).toString;
+      t1 = J.get$onClick$x(btn1);
+      t2 = t1.$ti;
+      A._EventStreamSubscription$(t1._target, t1._eventType, t2._eval$1("~(1)?")._as(new A.buildPage11_closure()), false, t2._precomputed1);
+      btn.appendChild(rectbtn).toString;
+      btn.appendChild(iconbtn).toString;
+      svg.appendChild(btn).toString;
+      svg.appendChild(btn1).toString;
+      sec.appendChild(svg).toString;
+      t2 = J.get$onClick$x(btn);
+      t1 = t2.$ti;
+      A._EventStreamSubscription$(t2._target, t2._eventType, t1._eval$1("~(1)?")._as(new A.buildPage11_closure0()), false, t1._precomputed1);
+      return sec;
+    },
+    showOnboarding() {
+      var overlay, t3, dialog, t4, _s4_ = "100%",
+        _s13_ = "border-radius",
+        t1 = document,
+        t2 = t1.body;
+      t2.toString;
+      overlay = t1.createElement("div");
+      t3 = overlay.style;
+      t3.position = "fixed";
+      t3.top = "0";
+      t3.left = "0";
+      t3.width = _s4_;
+      t3.height = _s4_;
+      t3.backgroundColor = "rgba(0,0,0,0.5)";
+      t3.display = "flex";
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t3, B.CssStyleDeclaration_methods._browserPropertyName$1(t3, "align-items"), "center", "");
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t3, B.CssStyleDeclaration_methods._browserPropertyName$1(t3, "justify-content"), "center", "");
+      t3.zIndex = "9999";
+      dialog = t1.createElement("div");
+      t3 = dialog.style;
+      t3.position = "relative";
+      t3.width = "1300px";
+      t3.height = "650px";
+      t3.backgroundColor = "white";
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t3, B.CssStyleDeclaration_methods._browserPropertyName$1(t3, _s13_), "12px", "");
+      t3.padding = "20px";
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t3, B.CssStyleDeclaration_methods._browserPropertyName$1(t3, "box-sizing"), "border-box", "");
+      t3 = t1.createElement("button");
+      t3.toString;
+      B.ButtonElement_methods.set$text(t3, "\u2715");
+      t4 = t3.style;
+      t4.position = "absolute";
+      t4.top = "10px";
+      t4.right = "10px";
+      t4.width = "35px";
+      t4.height = "35px";
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t4, B.CssStyleDeclaration_methods._browserPropertyName$1(t4, _s13_), "50%", "");
+      t4.border = "none";
+      t4.backgroundColor = "red";
+      t4.color = "white";
+      t4.fontSize = "20px";
+      t4.cursor = "pointer";
+      t1 = t1.createElement("iframe");
+      t1.toString;
+      B.IFrameElement_methods.set$src(t1, "https://www.youtube.com/embed/96fSBkZx83s?si=vVT34iJixe54gqGU");
+      B.IFrameElement_methods.set$width(t1, _s4_);
+      B.IFrameElement_methods.set$height(t1, _s4_);
+      t4 = t1.style;
+      t4.border = "none";
+      B.IFrameElement_methods.set$allowFullscreen(t1, true);
+      t4 = type$._ElementEventStreamImpl_MouseEvent;
+      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure(overlay)), false, t4._precomputed1);
+      dialog.appendChild(t1).toString;
+      dialog.appendChild(t3).toString;
+      overlay.appendChild(dialog).toString;
+      t2.appendChild(overlay).toString;
+    },
+    buildPage11_closure: function buildPage11_closure() {
+    },
+    buildPage11_closure0: function buildPage11_closure0() {
+    },
+    showOnboarding_closure: function showOnboarding_closure(t0) {
+      this.overlay = t0;
+    },
+    buildPage12() {
+      var t1, svg, test_banner, left_line, banner_title_bg, banner_title, solution_bg, solution, sidenumber, practice2a, practice2a_title, word1_bg, word1, word11_input, word11_textbox, t2, word1_1, word11_1_input, word11_1_textbox, word1_2, word2_bg, word2, word12_input, word12_textbox, word2_1, word13_input, word13_textbox, word2_2, checkBtn, t3, testb, testb_title, hr2, testc, testc_title,
+        _s26_ = "http://www.w3.org/2000/svg",
+        _s5_ = "width", _s6_ = "height",
+        _s7_ = "polygon",
+        _s6_0 = "points", _s4_ = "fill",
+        _s9_ = "CadetBlue",
+        _s4_0 = "text", _s1_ = "x", _s1_0 = "y",
+        _s9_0 = "font-size",
+        _s1_1 = "5", _s4_1 = "rect", _s2_ = "30", _s1_2 = "7",
+        _s11_ = "font-weight",
+        _s5_0 = "black", _s2_0 = "20",
+        _s11_0 = "font-family",
+        _s15_ = "Times New Roman",
+        _s5_1 = "green",
+        _s10_ = "PapayaWhip",
+        _s13_ = "foreignObject",
+        _s2_1 = "38", _s3_ = "7px", _s5_2 = "5.5px",
+        _s15_0 = "1px solid black",
+        _s13_0 = "border-radius",
+        _s4_2 = "none",
+        _s10_0 = "border-box",
+        _s10_1 = "box-sizing",
+        sec = type$.Element._as(A._ElementFactoryProvider_createElement_tag("section", null));
+      J.get$classes$x(sec).addAll$1(0, A._setArrayType(["section"], type$.JSArray_String));
+      t1 = document;
+      t1.toString;
+      svg = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "svg");
+      svg.setAttribute(_s5_, "210mm");
+      svg.setAttribute(_s6_, "297mm");
+      svg.setAttribute("viewBox", "0 0 210 297");
+      test_banner = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s7_);
+      test_banner.setAttribute(_s6_0, string$.__157_);
+      test_banner.setAttribute(_s4_, "rgb(230, 255, 230)");
+      left_line = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s7_);
+      left_line.setAttribute(_s6_0, "0,0 5,0 5,205 0,210");
+      left_line.setAttribute(_s4_, _s9_);
+      banner_title_bg = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s7_);
+      banner_title_bg.setAttribute(_s6_0, "142,159 190,159 190,167 150,167");
+      banner_title_bg.setAttribute(_s4_, _s9_);
+      banner_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(banner_title, "FASTTEST");
+      banner_title.setAttribute(_s1_, "155");
+      banner_title.setAttribute(_s1_0, "165");
+      banner_title.setAttribute(_s9_0, _s1_1);
+      banner_title.setAttribute(_s4_, "white");
+      solution_bg = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_1);
+      solution_bg.setAttribute(_s1_, _s2_);
+      solution_bg.setAttribute(_s1_0, "275");
+      solution_bg.setAttribute(_s5_, "44");
+      solution_bg.setAttribute(_s6_, _s1_2);
+      solution_bg.setAttribute("rx", "2");
+      solution_bg.setAttribute(_s4_, "SkyBlue");
+      solution = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(solution, "Solution > P. 120");
+      solution.setAttribute(_s1_, "34");
+      solution.setAttribute(_s1_0, "280");
+      solution.setAttribute(_s9_0, _s1_1);
+      solution.setAttribute(_s11_, "600");
+      sidenumber = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(sidenumber, "02\xa0\xa0|\xa0\xa0Two");
+      sidenumber.setAttribute(_s9_0, _s1_1);
+      sidenumber.setAttribute(_s4_, _s5_0);
+      sidenumber.setAttribute(_s1_, "10");
+      sidenumber.setAttribute(_s1_0, "245");
+      sidenumber.setAttribute("transform", "rotate(-90 10 245)");
+      svg.appendChild(test_banner).toString;
+      svg.appendChild(left_line).toString;
+      svg.appendChild(banner_title_bg).toString;
+      svg.appendChild(banner_title).toString;
+      svg.appendChild(solution_bg).toString;
+      svg.appendChild(solution).toString;
+      svg.appendChild(sidenumber).toString;
+      practice2a = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice2a, "d");
+      practice2a.setAttribute(_s1_, _s2_0);
+      practice2a.setAttribute(_s1_0, _s2_0);
+      practice2a.setAttribute(_s9_0, _s1_1);
+      practice2a.setAttribute(_s11_, "900");
+      practice2a.setAttribute(_s11_0, _s15_);
+      practice2a.setAttribute(_s4_, _s5_1);
+      practice2a_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(practice2a_title, "How do you debug the code!?");
+      practice2a_title.setAttribute(_s1_, _s2_);
+      practice2a_title.setAttribute(_s1_0, _s2_0);
+      practice2a_title.setAttribute(_s9_0, _s1_1);
+      practice2a_title.setAttribute(_s11_0, _s15_);
+      practice2a_title.setAttribute(_s4_, _s5_0);
+      word1_bg = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_1);
+      word1_bg.setAttribute(_s1_, _s2_);
+      word1_bg.setAttribute(_s1_0, "25");
+      word1_bg.setAttribute(_s5_, "135");
+      word1_bg.setAttribute(_s6_, _s1_2);
+      word1_bg.setAttribute("rx", "2");
+      word1_bg.setAttribute(_s4_, _s10_);
+      word1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(word1, "final section_heading = ");
+      word1.setAttribute(_s1_, "31");
+      word1.setAttribute(_s1_0, _s2_);
+      word1.setAttribute(_s9_0, _s1_1);
+      word11_input = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s13_);
+      word11_input.setAttribute(_s1_, "79");
+      word11_input.setAttribute(_s1_0, "25");
+      word11_input.setAttribute(_s5_, _s2_1);
+      word11_input.setAttribute(_s6_, _s1_2);
+      word11_textbox = A.InputElement_InputElement();
+      t2 = word11_textbox.style;
+      t2.width = "38px";
+      t2 = word11_textbox.style;
+      t2.height = _s3_;
+      t2 = word11_textbox.style;
+      t2.fontSize = _s5_2;
+      t2 = word11_textbox.style;
+      t2.border = _s15_0;
+      t2 = word11_textbox.style;
+      t2.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t2, B.CssStyleDeclaration_methods._browserPropertyName$1(t2, _s13_0), "0", "");
+      t2 = word11_textbox.style;
+      t2.outline = _s4_2;
+      t2 = word11_textbox.style;
+      t2.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t2, B.CssStyleDeclaration_methods._browserPropertyName$1(t2, _s10_1), _s10_0, "");
+      word11_textbox.id = "word11_input";
+      word11_input.appendChild(word11_textbox).toString;
+      word1_1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(word1_1, "('h1')..");
+      word1_1.setAttribute(_s1_, "118");
+      word1_1.setAttribute(_s1_0, _s2_);
+      word1_1.setAttribute(_s9_0, _s1_1);
+      word11_1_input = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s13_);
+      word11_1_input.setAttribute(_s1_, "131");
+      word11_1_input.setAttribute(_s1_0, "25");
+      word11_1_input.setAttribute(_s5_, "15");
+      word11_1_input.setAttribute(_s6_, _s1_2);
+      word11_1_textbox = A.InputElement_InputElement();
+      t2 = word11_1_textbox.style;
+      t2.width = "15px";
+      t2 = word11_1_textbox.style;
+      t2.height = _s3_;
+      t2 = word11_1_textbox.style;
+      t2.fontSize = _s5_2;
+      t2 = word11_1_textbox.style;
+      t2.border = _s15_0;
+      t2 = word11_1_textbox.style;
+      t2.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t2, B.CssStyleDeclaration_methods._browserPropertyName$1(t2, _s13_0), "0", "");
+      t2 = word11_1_textbox.style;
+      t2.outline = _s4_2;
+      t2 = word11_1_textbox.style;
+      t2.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t2, B.CssStyleDeclaration_methods._browserPropertyName$1(t2, _s10_1), _s10_0, "");
+      word11_1_textbox.id = "word11_1_input";
+      word11_1_input.appendChild(word11_1_textbox).toString;
+      word1_2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(word1_2, " = 'Dart Web Page';");
+      word1_2.setAttribute(_s1_, "125");
+      word1_2.setAttribute(_s1_0, _s2_);
+      word1_2.setAttribute(_s9_0, _s1_1);
+      word2_bg = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_1);
+      word2_bg.setAttribute(_s1_, _s2_);
+      word2_bg.setAttribute(_s1_0, "33");
+      word2_bg.setAttribute(_s5_, "70");
+      word2_bg.setAttribute(_s6_, _s1_2);
+      word2_bg.setAttribute("rx", "2");
+      word2_bg.setAttribute(_s4_, _s10_);
+      word2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(word2, "document.");
+      word2.setAttribute(_s1_, "31");
+      word2.setAttribute(_s1_0, _s2_1);
+      word2.setAttribute(_s9_0, _s1_1);
+      word12_input = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s13_);
+      word12_input.setAttribute(_s1_, "52");
+      word12_input.setAttribute(_s1_0, "33");
+      word12_input.setAttribute(_s5_, "19");
+      word12_input.setAttribute(_s6_, _s1_2);
+      word12_textbox = A.InputElement_InputElement();
+      t2 = word12_textbox.style;
+      t2.width = "19px";
+      t2 = word12_textbox.style;
+      t2.height = _s3_;
+      t2 = word12_textbox.style;
+      t2.fontSize = _s5_2;
+      t2 = word12_textbox.style;
+      t2.border = _s15_0;
+      t2 = word12_textbox.style;
+      t2.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t2, B.CssStyleDeclaration_methods._browserPropertyName$1(t2, _s13_0), "0", "");
+      t2 = word12_textbox.style;
+      t2.outline = _s4_2;
+      t2 = word12_textbox.style;
+      t2.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t2, B.CssStyleDeclaration_methods._browserPropertyName$1(t2, _s10_1), _s10_0, "");
+      word12_textbox.id = "word12_input";
+      word12_input.appendChild(word12_textbox).toString;
+      word2_1 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(word2_1, "!..");
+      word2_1.setAttribute(_s1_, "72");
+      word2_1.setAttribute(_s1_0, _s2_1);
+      word2_1.setAttribute(_s9_0, _s1_1);
+      word13_input = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s13_);
+      word13_input.setAttribute(_s1_, "77");
+      word13_input.setAttribute(_s1_0, "33");
+      word13_input.setAttribute(_s5_, "70");
+      word13_input.setAttribute(_s6_, _s1_2);
+      word13_textbox = A.InputElement_InputElement();
+      t2 = word13_textbox.style;
+      t2.width = "70px";
+      t2 = word13_textbox.style;
+      t2.height = _s3_;
+      t2 = word13_textbox.style;
+      t2.fontSize = _s5_2;
+      t2 = word13_textbox.style;
+      t2.border = _s15_0;
+      t2 = word13_textbox.style;
+      t2.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t2, B.CssStyleDeclaration_methods._browserPropertyName$1(t2, _s13_0), "0", "");
+      t2 = word13_textbox.style;
+      t2.outline = _s4_2;
+      t2 = word13_textbox.style;
+      t2.toString;
+      B.CssStyleDeclaration_methods._setPropertyHelper$3(t2, B.CssStyleDeclaration_methods._browserPropertyName$1(t2, _s10_1), _s10_0, "");
+      word13_textbox.id = "word13_input";
+      word13_input.appendChild(word13_textbox).toString;
+      word2_2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(word2_2, "(title);");
+      word2_2.setAttribute(_s1_, "103");
+      word2_2.setAttribute(_s1_0, _s2_1);
+      word2_2.setAttribute(_s9_0, _s1_1);
+      checkBtn = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s13_);
+      checkBtn.setAttribute(_s1_, "150");
+      checkBtn.setAttribute(_s1_0, "35");
+      checkBtn.setAttribute(_s5_, "40");
+      checkBtn.setAttribute(_s6_, "10");
+      t2 = t1.createElement("button");
+      t2.toString;
+      B.ButtonElement_methods.set$text(t2, "Check");
+      t3 = t2.style;
+      t3.width = "100%";
+      t3 = t2.style;
+      t3.height = "100%";
+      t3 = t2.style;
+      t3.fontSize = "5px";
+      t3 = t2.style;
+      t3.cursor = "pointer";
+      t2.id = "checkBtn";
+      checkBtn.appendChild(t2).toString;
+      t3 = type$._ElementEventStreamImpl_MouseEvent;
+      A._EventStreamSubscription$(t2, "click", t3._eval$1("~(1)?")._as(new A.buildPage12_closure()), false, t3._precomputed1);
+      svg.appendChild(practice2a).toString;
+      svg.appendChild(practice2a_title).toString;
+      svg.appendChild(word1_bg).toString;
+      svg.appendChild(word2_bg).toString;
+      svg.appendChild(word1).toString;
+      svg.appendChild(word1_1).toString;
+      svg.appendChild(word11_input).toString;
+      svg.appendChild(word1).toString;
+      svg.appendChild(word11_1_input).toString;
+      svg.appendChild(word2).toString;
+      svg.appendChild(word12_input).toString;
+      svg.appendChild(word13_input).toString;
+      svg.appendChild(word2_1).toString;
+      svg.appendChild(checkBtn).toString;
+      svg.appendChild(sidenumber).toString;
+      testb = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(testb, "b");
+      testb.setAttribute(_s1_, _s2_0);
+      testb.setAttribute(_s1_0, "175");
+      testb.setAttribute(_s9_0, _s1_1);
+      testb.setAttribute(_s11_0, _s15_);
+      testb.setAttribute(_s4_, _s5_1);
+      testb_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(testb_title, string$.Create);
+      testb_title.setAttribute(_s1_, _s2_);
+      testb_title.setAttribute(_s1_0, "175");
+      testb_title.setAttribute(_s9_0, _s1_1);
+      testb_title.setAttribute(_s11_0, _s15_);
+      testb_title.setAttribute(_s4_, _s5_0);
+      hr2 = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, "line");
+      hr2.setAttribute("x1", _s2_0);
+      hr2.setAttribute("y1", "185");
+      hr2.setAttribute("x2", "190");
+      hr2.setAttribute("y2", "185");
+      hr2.setAttribute("stroke", _s5_0);
+      hr2.setAttribute("stroke-width", "0.5");
+      hr2.setAttribute("stroke-linecap", "round");
+      hr2.setAttribute("stroke-dasharray", "0.1 2");
+      testc = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(testc, "c");
+      testc.setAttribute(_s1_, _s2_0);
+      testc.setAttribute(_s1_0, "195");
+      testc.setAttribute(_s9_0, _s1_1);
+      testc.setAttribute(_s11_0, _s15_);
+      testc.setAttribute(_s4_, _s5_1);
+      testc_title = B.HtmlDocument_methods.createElementNS$2(t1, _s26_, _s4_0);
+      J.set$text$x(testc_title, "Create a website, with this output' ");
+      testc_title.setAttribute(_s1_, _s2_);
+      testc_title.setAttribute(_s1_0, "195");
+      testc_title.setAttribute(_s9_0, _s1_1);
+      testc_title.setAttribute(_s11_0, _s15_);
+      testc_title.setAttribute(_s4_, _s5_0);
+      svg.appendChild(testb).toString;
+      svg.appendChild(testb_title).toString;
+      svg.appendChild(hr2).toString;
+      svg.appendChild(testc).toString;
+      svg.appendChild(testc_title).toString;
+      sec.appendChild(svg).toString;
+      return sec;
+    },
+    buildPage12_closure: function buildPage12_closure() {
+    },
+    buildPage12__closure: function buildPage12__closure() {
     },
     buildPage2() {
       var t1, svg, test_banner, left_line, banner_title_bg, banner_title, solution_bg, solution, sidenumber, practice2a, practice2a_title, word1_bg, word1, word1_input, word1_textbox, t2, word1_2, checkBtn, t3, testb, testb_title, hr2, testc, testc_title,
@@ -6360,7 +7059,7 @@
       A._EventStreamSubscription$(t2._target, t2._eventType, t1._eval$1("~(1)?")._as(new A.buildPage3_closure0()), false, t1._precomputed1);
       return sec;
     },
-    showOnboarding2() {
+    showOnboarding3() {
       var overlay, t3, dialog, t4, _s4_ = "100%",
         _s13_ = "border-radius",
         t1 = document,
@@ -6411,7 +7110,7 @@
       t4.border = "none";
       B.IFrameElement_methods.set$allowFullscreen(t1, true);
       t4 = type$._ElementEventStreamImpl_MouseEvent;
-      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure2(overlay)), false, t4._precomputed1);
+      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure3(overlay)), false, t4._precomputed1);
       dialog.appendChild(t1).toString;
       dialog.appendChild(t3).toString;
       overlay.appendChild(dialog).toString;
@@ -6421,7 +7120,7 @@
     },
     buildPage3_closure0: function buildPage3_closure0() {
     },
-    showOnboarding_closure2: function showOnboarding_closure2(t0) {
+    showOnboarding_closure3: function showOnboarding_closure3(t0) {
       this.overlay = t0;
     },
     buildPage4() {
@@ -6939,7 +7638,7 @@
       A._EventStreamSubscription$(t2._target, t2._eventType, t1._eval$1("~(1)?")._as(new A.buildPage5_closure0()), false, t1._precomputed1);
       return sec;
     },
-    showOnboarding1() {
+    showOnboarding2() {
       var overlay, t3, dialog, t4, _s4_ = "100%",
         _s13_ = "border-radius",
         t1 = document,
@@ -6990,7 +7689,7 @@
       t4.border = "none";
       B.IFrameElement_methods.set$allowFullscreen(t1, true);
       t4 = type$._ElementEventStreamImpl_MouseEvent;
-      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure1(overlay)), false, t4._precomputed1);
+      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure2(overlay)), false, t4._precomputed1);
       dialog.appendChild(t1).toString;
       dialog.appendChild(t3).toString;
       overlay.appendChild(dialog).toString;
@@ -7000,7 +7699,7 @@
     },
     buildPage5_closure0: function buildPage5_closure0() {
     },
-    showOnboarding_closure1: function showOnboarding_closure1(t0) {
+    showOnboarding_closure2: function showOnboarding_closure2(t0) {
       this.overlay = t0;
     },
     buildPage6() {
@@ -7584,7 +8283,7 @@
       A._EventStreamSubscription$(t2._target, t2._eventType, t1._eval$1("~(1)?")._as(new A.buildPage7_closure0()), false, t1._precomputed1);
       return sec;
     },
-    showOnboarding0() {
+    showOnboarding1() {
       var overlay, t3, dialog, t4, _s4_ = "100%",
         _s13_ = "border-radius",
         t1 = document,
@@ -7635,7 +8334,7 @@
       t4.border = "none";
       B.IFrameElement_methods.set$allowFullscreen(t1, true);
       t4 = type$._ElementEventStreamImpl_MouseEvent;
-      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure0(overlay)), false, t4._precomputed1);
+      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure1(overlay)), false, t4._precomputed1);
       dialog.appendChild(t1).toString;
       dialog.appendChild(t3).toString;
       overlay.appendChild(dialog).toString;
@@ -7645,7 +8344,7 @@
     },
     buildPage7_closure0: function buildPage7_closure0() {
     },
-    showOnboarding_closure0: function showOnboarding_closure0(t0) {
+    showOnboarding_closure1: function showOnboarding_closure1(t0) {
       this.overlay = t0;
     },
     buildPage8() {
@@ -8278,7 +8977,7 @@
       A._EventStreamSubscription$(t2._target, t2._eventType, t1._eval$1("~(1)?")._as(new A.buildPage9_closure0()), false, t1._precomputed1);
       return sec;
     },
-    showOnboarding() {
+    showOnboarding0() {
       var overlay, t3, dialog, t4, _s4_ = "100%",
         _s13_ = "border-radius",
         t1 = document,
@@ -8329,7 +9028,7 @@
       t4.border = "none";
       B.IFrameElement_methods.set$allowFullscreen(t1, true);
       t4 = type$._ElementEventStreamImpl_MouseEvent;
-      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure(overlay)), false, t4._precomputed1);
+      A._EventStreamSubscription$(t3, "click", t4._eval$1("~(1)?")._as(new A.showOnboarding_closure0(overlay)), false, t4._precomputed1);
       dialog.appendChild(t1).toString;
       dialog.appendChild(t3).toString;
       overlay.appendChild(dialog).toString;
@@ -8339,7 +9038,7 @@
     },
     buildPage9_closure0: function buildPage9_closure0() {
     },
-    showOnboarding_closure: function showOnboarding_closure(t0) {
+    showOnboarding_closure0: function showOnboarding_closure0(t0) {
       this.overlay = t0;
     },
     loadcss() {
@@ -11852,11 +12551,11 @@
   A.buildPage1_closure0.prototype = {
     call$1(__wc1_formal) {
       type$.MouseEvent._as(__wc1_formal);
-      A.showOnboarding3();
+      A.showOnboarding4();
     },
     $signature: 0
   };
-  A.showOnboarding_closure3.prototype = {
+  A.showOnboarding_closure4.prototype = {
     call$1(__wc0_formal) {
       type$.MouseEvent._as(__wc0_formal);
       B.DivElement_methods.remove$0(this.overlay);
@@ -11873,6 +12572,60 @@
     $signature: 0
   };
   A.buildPage10__closure.prototype = {
+    call$2(id, correct) {
+      var input, t1;
+      A._asString(id);
+      A._asString(correct);
+      input = type$.InputElement._as(document.getElementById(id));
+      t1 = input.value;
+      if (B.JSString_methods.trim$0(t1 == null ? "" : t1) === correct) {
+        t1 = input.style;
+        t1.color = "green";
+        t1 = input.style;
+        t1.border = "1px solid green";
+      } else {
+        t1 = input.style;
+        t1.color = "red";
+        t1 = input.style;
+        t1.border = "1px solid red";
+      }
+    },
+    $signature: 3
+  };
+  A.buildPage11_closure.prototype = {
+    call$1(__wc0_formal) {
+      var t1;
+      type$.MouseEvent._as(__wc0_formal);
+      t1 = window;
+      t1.toString;
+      B.Window_methods.open$2(t1, string$.https_, "myWindow");
+    },
+    $signature: 0
+  };
+  A.buildPage11_closure0.prototype = {
+    call$1(__wc1_formal) {
+      type$.MouseEvent._as(__wc1_formal);
+      A.showOnboarding();
+    },
+    $signature: 0
+  };
+  A.showOnboarding_closure.prototype = {
+    call$1(__wc0_formal) {
+      type$.MouseEvent._as(__wc0_formal);
+      B.DivElement_methods.remove$0(this.overlay);
+    },
+    $signature: 0
+  };
+  A.buildPage12_closure.prototype = {
+    call$1(__wc0_formal) {
+      var t1;
+      type$.MouseEvent._as(__wc0_formal);
+      t1 = type$.String;
+      A.LinkedHashMap_LinkedHashMap$_literal(["word11_input", "Element.tag", "word11_1_input", "text", "word12_input", "body", "word13_input", "append(section_heading);"], t1, t1).forEach$1(0, new A.buildPage12__closure());
+    },
+    $signature: 0
+  };
+  A.buildPage12__closure.prototype = {
     call$2(id, correct) {
       var input, t1;
       A._asString(id);
@@ -11936,11 +12689,11 @@
   A.buildPage3_closure0.prototype = {
     call$1(__wc1_formal) {
       type$.MouseEvent._as(__wc1_formal);
-      A.showOnboarding2();
+      A.showOnboarding3();
     },
     $signature: 0
   };
-  A.showOnboarding_closure2.prototype = {
+  A.showOnboarding_closure3.prototype = {
     call$1(__wc0_formal) {
       type$.MouseEvent._as(__wc0_formal);
       B.DivElement_methods.remove$0(this.overlay);
@@ -11990,11 +12743,11 @@
   A.buildPage5_closure0.prototype = {
     call$1(__wc1_formal) {
       type$.MouseEvent._as(__wc1_formal);
-      A.showOnboarding1();
+      A.showOnboarding2();
     },
     $signature: 0
   };
-  A.showOnboarding_closure1.prototype = {
+  A.showOnboarding_closure2.prototype = {
     call$1(__wc0_formal) {
       type$.MouseEvent._as(__wc0_formal);
       B.DivElement_methods.remove$0(this.overlay);
@@ -12044,11 +12797,11 @@
   A.buildPage7_closure0.prototype = {
     call$1(__wc1_formal) {
       type$.MouseEvent._as(__wc1_formal);
-      A.showOnboarding0();
+      A.showOnboarding1();
     },
     $signature: 0
   };
-  A.showOnboarding_closure0.prototype = {
+  A.showOnboarding_closure1.prototype = {
     call$1(__wc0_formal) {
       type$.MouseEvent._as(__wc0_formal);
       B.DivElement_methods.remove$0(this.overlay);
@@ -12098,11 +12851,11 @@
   A.buildPage9_closure0.prototype = {
     call$1(__wc1_formal) {
       type$.MouseEvent._as(__wc1_formal);
-      A.showOnboarding();
+      A.showOnboarding0();
     },
     $signature: 0
   };
-  A.showOnboarding_closure.prototype = {
+  A.showOnboarding_closure0.prototype = {
     call$1(__wc0_formal) {
       type$.MouseEvent._as(__wc0_formal);
       B.DivElement_methods.remove$0(this.overlay);
@@ -12160,10 +12913,10 @@
     _inheritMany(A.EfficientLengthIterable, [A.ListIterable, A.LinkedHashMapKeysIterable]);
     _inherit(A.MappedListIterable, A.ListIterable);
     _inherit(A.NullError, A.TypeError);
-    _inheritMany(A.Closure, [A.Closure0Args, A.Closure2Args, A.TearOffClosure, A.initHooks_closure, A.initHooks_closure1, A._AsyncRun__initializeScheduleImmediate_internalCallback, A._AsyncRun__initializeScheduleImmediate_closure, A._Future__propagateToListeners_handleWhenCompleteCallback_closure, A.Stream_length_closure, A._RootZone_bindUnaryCallbackGuarded_closure, A._EventStreamSubscription_closure, A.CssClassSetImpl_add_closure, A.CssClassSetImpl_addAll_closure, A.loadscript_closure, A.main_closure, A.fromHtmlRToTuts_animate, A.fromTutsGoToHtml_animate, A.createHome_closure, A.createHome_closure0, A.createHome_closure1, A.createHome_closure2, A.createHome_closure3, A.createHome_closure4, A.createHome_closure5, A.createHome_closure6, A.createHome_closure7, A.createHome_closure8, A.createHome_closure9, A.createHome_closure10, A.createTuts_closure, A.createTuts_closure0, A.fromTutsGoToHome_animate, A.fromHomeGoToTuts_animate, A.createAbout_closure, A.createContact_closure, A.createContact_closure0, A.createFooter_closure, A.fromContactGoToHome_animate, A.fromFooterGoToContact_animate, A.fromHomeGoToAbout_animate, A.fromAboutGoToHome_animate, A.fromContactGoToFooter_animate, A.fromHomeGoToContact_animate, A.buildPage1_closure, A.buildPage1_closure0, A.showOnboarding_closure3, A.buildPage10_closure, A.buildPage2_closure, A.buildPage3_closure, A.buildPage3_closure0, A.showOnboarding_closure2, A.buildPage4_closure, A.buildPage5_closure, A.buildPage5_closure0, A.showOnboarding_closure1, A.buildPage6_closure, A.buildPage7_closure, A.buildPage7_closure0, A.showOnboarding_closure0, A.buildPage8_closure, A.buildPage9_closure, A.buildPage9_closure0, A.showOnboarding_closure, A.loadcss_closure, A.loadcss_closure0]);
+    _inheritMany(A.Closure, [A.Closure0Args, A.Closure2Args, A.TearOffClosure, A.initHooks_closure, A.initHooks_closure1, A._AsyncRun__initializeScheduleImmediate_internalCallback, A._AsyncRun__initializeScheduleImmediate_closure, A._Future__propagateToListeners_handleWhenCompleteCallback_closure, A.Stream_length_closure, A._RootZone_bindUnaryCallbackGuarded_closure, A._EventStreamSubscription_closure, A.CssClassSetImpl_add_closure, A.CssClassSetImpl_addAll_closure, A.loadscript_closure, A.main_closure, A.fromHtmlRToTuts_animate, A.fromTutsGoToHtml_animate, A.createHome_closure, A.createHome_closure0, A.createHome_closure1, A.createHome_closure2, A.createHome_closure3, A.createHome_closure4, A.createHome_closure5, A.createHome_closure6, A.createHome_closure7, A.createHome_closure8, A.createHome_closure9, A.createHome_closure10, A.createTuts_closure, A.createTuts_closure0, A.fromTutsGoToHome_animate, A.fromHomeGoToTuts_animate, A.createAbout_closure, A.createContact_closure, A.createContact_closure0, A.createFooter_closure, A.fromContactGoToHome_animate, A.fromFooterGoToContact_animate, A.fromHomeGoToAbout_animate, A.fromAboutGoToHome_animate, A.fromContactGoToFooter_animate, A.fromHomeGoToContact_animate, A.buildPage1_closure, A.buildPage1_closure0, A.showOnboarding_closure4, A.buildPage10_closure, A.buildPage11_closure, A.buildPage11_closure0, A.showOnboarding_closure, A.buildPage12_closure, A.buildPage2_closure, A.buildPage3_closure, A.buildPage3_closure0, A.showOnboarding_closure3, A.buildPage4_closure, A.buildPage5_closure, A.buildPage5_closure0, A.showOnboarding_closure2, A.buildPage6_closure, A.buildPage7_closure, A.buildPage7_closure0, A.showOnboarding_closure1, A.buildPage8_closure, A.buildPage9_closure, A.buildPage9_closure0, A.showOnboarding_closure0, A.loadcss_closure, A.loadcss_closure0]);
     _inheritMany(A.TearOffClosure, [A.StaticClosure, A.BoundClosure]);
     _inherit(A.JsLinkedHashMap, A.MapBase);
-    _inheritMany(A.Closure2Args, [A.initHooks_closure0, A._Future__propagateToListeners_handleWhenCompleteCallback_closure0, A.MapBase_mapToString_closure, A.MidiInputMap_keys_closure, A.MidiOutputMap_keys_closure, A.RtcStatsReport_keys_closure, A.Storage_keys_closure, A._StructuredClone_walk_closure, A._StructuredClone_walk_closure0, A.AudioParamMap_keys_closure, A.buildPage10__closure, A.buildPage2__closure, A.buildPage4__closure, A.buildPage6__closure, A.buildPage8__closure]);
+    _inheritMany(A.Closure2Args, [A.initHooks_closure0, A._Future__propagateToListeners_handleWhenCompleteCallback_closure0, A.MapBase_mapToString_closure, A.MidiInputMap_keys_closure, A.MidiOutputMap_keys_closure, A.RtcStatsReport_keys_closure, A.Storage_keys_closure, A._StructuredClone_walk_closure, A._StructuredClone_walk_closure0, A.AudioParamMap_keys_closure, A.buildPage10__closure, A.buildPage12__closure, A.buildPage2__closure, A.buildPage4__closure, A.buildPage6__closure, A.buildPage8__closure]);
     _inherit(A.NativeSharedArrayBuffer, A.NativeByteBuffer);
     _inheritMany(A.NativeTypedData, [A.NativeByteData, A.NativeTypedArray]);
     _inheritMany(A.NativeTypedArray, [A._NativeTypedArrayOfDouble_NativeTypedArray_ListMixin, A._NativeTypedArrayOfInt_NativeTypedArray_ListMixin]);
