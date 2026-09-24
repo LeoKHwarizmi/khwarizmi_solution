@@ -12,10 +12,10 @@ import 'page9.dart';
 import 'page10.dart';
 import 'page11.dart';
 import 'page12.dart';
-// import 'page13.dart';
-// import 'page14.dart';
-// import 'page15.dart';
-// import 'page16.dart';
+import 'page13.dart';
+import 'page14.dart';
+import 'page15.dart';
+import 'page16.dart';
 // import 'page17.dart';
 // import 'page18.dart';
 // import 'page19.dart';
@@ -63,6 +63,10 @@ final page9 = buildPage9();
 final page10 = buildPage10();
 final page11 = buildPage11();
 final page12 = buildPage12();
+final page13 = buildPage13();
+final page14 = buildPage14();
+final page15 = buildPage15();
+final page16 = buildPage16();
 
 // If buildPage2 crashes, at least page1 still shows:
 document.body!..append(page1)
@@ -76,7 +80,11 @@ document.body!..append(page1)
 ..append(Element.tag('br'))..append(page9)
 ..append(Element.tag('br'))..append(page10)
 ..append(Element.tag('br'))..append(page11)
-..append(Element.tag('br'))..append(page12);
+..append(Element.tag('br'))..append(page12)
+..append(Element.tag('br'))..append(page13)
+..append(Element.tag('br'))..append(page14)
+..append(Element.tag('br'))..append(page15)
+..append(Element.tag('br'))..append(page16);
 
   // Change URL from /html.html to /
   window.history.replaceState(null, '', '/khwarizmi_solution/');
