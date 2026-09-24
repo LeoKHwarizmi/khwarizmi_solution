@@ -16,8 +16,8 @@ import 'page13.dart';
 import 'page14.dart';
 import 'page15.dart';
 import 'page16.dart';
-// import 'page17.dart';
-// import 'page18.dart';
+import 'page17.dart';
+import 'page18.dart';
 // import 'page19.dart';
 // import 'page20.dart';
 import 'style.dart';
@@ -67,6 +67,8 @@ final page13 = buildPage13();
 final page14 = buildPage14();
 final page15 = buildPage15();
 final page16 = buildPage16();
+final page17 = buildPage17();
+final page18 = buildPage18();
 
 // If buildPage2 crashes, at least page1 still shows:
 document.body!..append(page1)
@@ -84,7 +86,9 @@ document.body!..append(page1)
 ..append(Element.tag('br'))..append(page13)
 ..append(Element.tag('br'))..append(page14)
 ..append(Element.tag('br'))..append(page15)
-..append(Element.tag('br'))..append(page16);
+..append(Element.tag('br'))..append(page16)
+..append(Element.tag('br'))..append(page17)
+..append(Element.tag('br'))..append(page18);
 
   // Change URL from /html.html to /
   window.history.replaceState(null, '', '/khwarizmi_solution/');
